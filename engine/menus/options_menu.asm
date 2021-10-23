@@ -108,6 +108,7 @@ GetOptionPointer:
 	const OPT_TEXT_SPEED_FAST ; 0
 	const OPT_TEXT_SPEED_MED  ; 1
 	const OPT_TEXT_SPEED_SLOW ; 2
+	const OPT_TEXT_SPEED_INST ; 3
 
 Options_TextSpeed:
 	call GetTextSpeed
@@ -117,7 +118,7 @@ Options_TextSpeed:
 	bit D_RIGHT_F, a
 	jr z, .NonePressed
 	ld a, c ; right pressed
-	cp OPT_TEXT_SPEED_SLOW
+	cp OPT_TEXT_SPEED_INST
 	jr c, .Increase
 	ld c, OPT_TEXT_SPEED_FAST - 1
 
@@ -130,7 +131,7 @@ Options_TextSpeed:
 	ld a, c
 	and a
 	jr nz, .Decrease
-	ld c, OPT_TEXT_SPEED_SLOW + 1
+	ld c, OPT_TEXT_SPEED_INST + 1
 
 .Decrease:
 	dec c
@@ -161,10 +162,12 @@ Options_TextSpeed:
 	dw .Fast
 	dw .Mid
 	dw .Slow
+	dw .Inst
 
 .Fast: db "FAST@"
 .Mid:  db "MID @"
 .Slow: db "SLOW@"
+.Inst: db "INST@"
 
 GetTextSpeed:
 ; converts TEXT_DELAY_* value in a to OPT_TEXT_SPEED_* value in c,
@@ -175,6 +178,8 @@ GetTextSpeed:
 	jr z, .slow
 	cp TEXT_DELAY_FAST
 	jr z, .fast
+	cp TEXT_DELAY_INST
+	jr z, .inst
 	; none of the above
 	ld c, OPT_TEXT_SPEED_MED
 	lb de, TEXT_DELAY_FAST, TEXT_DELAY_SLOW
@@ -182,12 +187,17 @@ GetTextSpeed:
 
 .slow
 	ld c, OPT_TEXT_SPEED_SLOW
-	lb de, TEXT_DELAY_MED, TEXT_DELAY_FAST
+	lb de, TEXT_DELAY_MED, TEXT_DELAY_INST
 	ret
 
 .fast
 	ld c, OPT_TEXT_SPEED_FAST
-	lb de, TEXT_DELAY_SLOW, TEXT_DELAY_MED
+	lb de, TEXT_DELAY_INST, TEXT_DELAY_MED
+	ret
+
+.inst
+	ld c, OPT_TEXT_SPEED_INST
+	lb de, TEXT_DELAY_SLOW, TEXT_DELAY_FAST
 	ret
 
 Options_BattleScene:
