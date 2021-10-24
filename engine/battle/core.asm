@@ -6227,7 +6227,7 @@ LoadEnemyMon:
 ; Fill stats
 	ld de, wEnemyMonMaxHP
 	ld b, FALSE
-	ld hl, wEnemyMonDVs - (MON_DVS - MON_STAT_EXP + 1)
+	ld hl, wEnemyMonDVs - (MON_DVS - MON_EVS + 1)
 	predef CalcMonStats
 
 ; If we're in a trainer battle,
@@ -7015,7 +7015,7 @@ GiveExperiencePoints:
 ; Give EVs
 ; e = 0 for no Pokerus, 1 for Pokerus
 	ld e, 0
-	ls hl, MON_POKERUS ; ???
+	ld hl, MON_POKERUS ; ???
 	add hl, bc
 	ld a, [hl]
 	and a
@@ -7026,7 +7026,7 @@ GiveExperiencePoints:
 	add hl,bc
 	push bc
 	ld a, [wEnemyMonSpecies]
-	ls [wCurSpecies], a
+	ld [wCurSpecies], a
 	call GetBaseData
 ; EV yield format: %hhaaddss %ttff0000
 ; h = hp, a = atk, d = def, s = spd
@@ -7043,6 +7043,46 @@ GiveExperiencePoints:
 	jr z, .no_pokerus_boost
 	add a
 .no_pokerus_boost
+; Make sure total EVs never surpass 510
+	push bc
+	push hl
+	ld d, a
+	ld a, c
+.find_correct_ev_address ; If address of first EV is changed, find the correct one.
+	cp NUM_STATS
+	jr z, .found_address
+	dec hl
+	inc a
+	jr .find_correct_ev_address
+.found_address
+	ld e, NUM_STATS
+	ld bc, 0
+.count_evs
+	ld a, [hli]
+	add c
+	ld c, a
+	jr nc, .cont
+	inc b
+.cont
+	dec e
+	jr nz, .count_evs
+	ld a, d
+	add c
+	ld c, a
+	adc b
+	sub c
+	ld b, a
+	ld e, d
+.decrease_evs_gained
+	call IsEvsGreaterThan510
+	jr nc, .check_ev_overflow
+	dec e
+	dec bc
+	jr .decrease_evs_gained
+.check_ev_overflow
+	pop hl
+	pop bc
+	ld a, e
 	add [hl]
 	jr c, .ev_overflow
 	cp MAX_EV + 1
@@ -7213,7 +7253,7 @@ GiveExperiencePoints:
 	add hl, bc
 	ld d, h
 	ld e, l
-	ld hl, MON_STAT_EXP - 1
+	ld hl, MON_EVS - 1
 	add hl, bc
 	push bc
 	ld b, TRUE
@@ -7380,6 +7420,15 @@ GiveExperiencePoints:
 	call Divide
 	ldh a, [hQuotient + 3]
 	ld [hl], a
+	ret
+
+IsEvsGreaterThan510:
+; Total EVs in bc. Set Carry flag if bc > 510
+	ld a, HIGH(MAX_TOTAL_EV)
+	cp b
+	ret nz
+	ld a, LOW(MAX_TOTAL_EV)
+	cp c
 	ret
 
 BoostExp:

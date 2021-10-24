@@ -1188,15 +1188,50 @@ VitaminEffect:
 
 	call GetEVRelativePointer
 
-	ld a, MON_STAT_EXP
+	ld a, MON_EVS
 	call GetPartyParamLocation
+
+	ld d, 10
+	push bc
+	push hl
+	ld e, NUM_STATS
+	ld bc, 0
+.count_evs
+	ld a, [hli]
+	add c
+	ld c, a
+	jr nc, .count
+	inc b
+.count
+	dec e
+	jr nz, .count_evs
+	ld a, d
+	add c
+	ld c, a
+	adc b
+	sub c
+	ld b, a
+	ld e, d
+.decrease_evs_gained
+	farcall IsEvsGreaterThan510
+	jr nc, .check_ev_overflow
+	dec e
+	dec bc
+	jr .decrease_evs_gained
+.check_ev_overflow
+	pop hl
+	pop bc
+
+	ld a, e
+	and a
+	jr z, NoEffectMessage
 
 	add hl, bc
 	ld a, [hl]
 	cp 100
 	jr nc, NoEffectMessage
 
-	add 10
+	add e
 	ld [hl], a
 	call UpdateStatsAfterItem
 
@@ -1232,7 +1267,7 @@ UpdateStatsAfterItem:
 	call GetPartyParamLocation
 	ld d, h
 	ld e, l
-	ld a, MON_STAT_EXP - 1
+	ld a, MON_EVS - 1
 	call GetPartyParamLocation
 	ld b, TRUE
 	predef_jump CalcMonStats
@@ -1257,7 +1292,7 @@ StatStrings:
 .attack  db "ATTACK@"
 .defense db "DEFENSE@"
 .speed   db "SPEED@"
-.special db "SPCL.ATK@"
+.sp_atk db "SPCL.ATK@"
 
 GetEVRelativePointer:
 	ld a, [wCurItem]
@@ -1280,7 +1315,7 @@ EVItemPointerOffsets:
 	db PROTEIN, MON_ATK_EV - MON_EVS
 	db IRON,    MON_DEF_EV - MON_EVS
 	db CARBOS,  MON_SPD_EV - MON_EVS
-	db CALCIUM, MON_SPC_EV - MON_EVS
+	db CALCIUM, MON_SAT_EV - MON_EVS
 
 RareCandy_StatBooster_GetParameters:
 	ld a, [wCurPartySpecies]

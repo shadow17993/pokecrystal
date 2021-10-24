@@ -121,6 +121,7 @@ REDMON_STRUCT_LENGTH EQU 44
 
 ; significant EV values
 MAX_EV EQU 252
+MAX_TOTAL_EV EQU 510
 
 ; caught data
 
