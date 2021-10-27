@@ -253,10 +253,10 @@ BattleAnimations::
 	dw BattleAnim_RockSmash
 	dw BattleAnim_Whirlpool
 	dw BattleAnim_BeatUp
+	dw BattleAnim_FairyWind
+	dw BattleAnim_Moonblast
+	dw BattleAnim_PlayRough
 	assert_table_length NUM_ATTACKS + 1
-	dw BattleAnim_252
-	dw BattleAnim_253
-	dw BattleAnim_254
 	dw BattleAnim_SweetScent2
 	assert_table_length $100
 ; $100
@@ -285,9 +285,6 @@ BattleAnimations::
 	assert_table_length NUM_BATTLE_ANIMS + 1
 
 BattleAnim_0:
-BattleAnim_252:
-BattleAnim_253:
-BattleAnim_254:
 BattleAnim_MirrorMove:
 	anim_ret
 
@@ -1342,6 +1339,7 @@ BattleAnim_Sonicboom_JP: ; unreferenced
 	anim_wait 16
 	anim_ret
 
+BattleAnim_FairyWind:
 BattleAnim_Gust:
 BattleAnim_Sonicboom:
 	anim_2gfx ANIM_GFX_WIND, ANIM_GFX_HIT
@@ -4225,6 +4223,7 @@ BattleAnim_MetalClaw:
 	anim_wait 32
 	anim_ret
 
+BattleAnim_PlayRough:
 BattleAnim_VitalThrow:
 	anim_1gfx ANIM_GFX_HIT
 	anim_call BattleAnim_TargetObj_1Row
@@ -4511,6 +4510,7 @@ BattleAnim_Ancientpower:
 	anim_wait 6
 	anim_ret
 
+BattleAnim_Moonblast:
 BattleAnim_ShadowBall:
 	anim_2gfx ANIM_GFX_EGG, ANIM_GFX_SMOKE
 	anim_bgp $1b

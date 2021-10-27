@@ -476,6 +476,7 @@ ClefairyEvosAttacks:
 	db 19, MINIMIZE
 	db 26, DEFENSE_CURL
 	db 34, METRONOME
+	db 39, MOONBLAST
 	db 43, MOONLIGHT
 	db 53, LIGHT_SCREEN
 	db 0 ; no more level-up moves
@@ -486,6 +487,7 @@ ClefableEvosAttacks:
 	db 1, DOUBLESLAP
 	db 1, METRONOME
 	db 1, MOONLIGHT
+	db 39, MOONBLAST
 	db 0 ; no more level-up moves
 
 VulpixEvosAttacks:
@@ -530,6 +532,7 @@ WigglytuffEvosAttacks:
 	db 1, DISABLE
 	db 1, DEFENSE_CURL
 	db 1, DOUBLESLAP
+	db 33, PLAY_ROUGH
 	db 0 ; no more level-up moves
 
 ZubatEvosAttacks:
@@ -567,6 +570,7 @@ OddishEvosAttacks:
 	db 16, STUN_SPORE
 	db 18, SLEEP_POWDER
 	db 23, ACID
+	db 28, MOONBLAST
 	db 32, MOONLIGHT
 	db 39, PETAL_DANCE
 	db 0 ; no more level-up moves
@@ -583,6 +587,7 @@ GloomEvosAttacks:
 	db 16, STUN_SPORE
 	db 18, SLEEP_POWDER
 	db 24, ACID
+	db 30, MOONBLAST
 	db 35, MOONLIGHT
 	db 44, PETAL_DANCE
 	db 0 ; no more level-up moves
@@ -593,6 +598,7 @@ VileplumeEvosAttacks:
 	db 1, SWEET_SCENT
 	db 1, STUN_SPORE
 	db 1, PETAL_DANCE
+	db 33, MOONBLAST
 	db 0 ; no more level-up moves
 
 ParasEvosAttacks:
@@ -690,7 +696,8 @@ MeowthEvosAttacks:
 	db 1, GROWL
 	db 11, BITE
 	db 20, PAY_DAY
-	db 28, FAINT_ATTACK
+	db 25, FAINT_ATTACK
+	db 30, PLAY_ROUGH
 	db 35, SCREECH
 	db 41, FURY_SWIPES
 	db 46, SLASH
@@ -703,7 +710,8 @@ PersianEvosAttacks:
 	db 1, BITE
 	db 11, BITE
 	db 20, PAY_DAY
-	db 29, FAINT_ATTACK
+	db 27, FAINT_ATTACK
+	db 33, PLAY_ROUGH
 	db 38, SCREECH
 	db 46, FURY_SWIPES
 	db 53, SLASH
@@ -777,6 +785,7 @@ GrowlitheEvosAttacks:
 	db 9, EMBER
 	db 18, LEER
 	db 26, TAKE_DOWN
+	db 30, PLAY_ROUGH
 	db 34, FLAME_WHEEL
 	db 42, AGILITY
 	db 50, FLAMETHROWER
@@ -2151,7 +2160,9 @@ TotodileEvosAttacks:
 	db EVOLVE_LEVEL, 18, CROCONAW
 	db 0 ; no more evolutions
 	db 1, SCRATCH
-	db 1, LEER
+	db 1, FAIRY_WIND
+	db 1, MOONBLAST
+	db 1, PLAY_ROUGH
 	db 7, RAGE
 	db 13, WATER_GUN
 	db 20, BITE
@@ -2227,6 +2238,7 @@ HoothootEvosAttacks:
 	db 22, REFLECT
 	db 28, TAKE_DOWN
 	db 34, CONFUSION
+	db 39, MOONBLAST
 	db 48, DREAM_EATER
 	db 0 ; no more level-up moves
 
@@ -2242,6 +2254,7 @@ NoctowlEvosAttacks:
 	db 25, REFLECT
 	db 33, TAKE_DOWN
 	db 41, CONFUSION
+	db 47, MOONBLAST
 	db 57, DREAM_EATER
 	db 0 ; no more level-up moves
 
@@ -2394,6 +2407,7 @@ TogeticEvosAttacks:
 	db 1, GROWL
 	db 1, CHARM
 	db 7, METRONOME
+	db 13, FAIRY_WIND
 	db 18, SWEET_KISS
 	db 25, ENCORE
 	db 31, SAFEGUARD
@@ -2469,6 +2483,7 @@ BellossomEvosAttacks:
 	db 1, SWEET_SCENT
 	db 1, STUN_SPORE
 	db 1, PETAL_DANCE
+	db 38, MOONBLAST
 	db 55, SOLARBEAM
 	db 0 ; no more level-up moves
 
@@ -2481,6 +2496,7 @@ MarillEvosAttacks:
 	db 10, WATER_GUN
 	db 15, ROLLOUT
 	db 21, BUBBLEBEAM
+	db 25, PLAY_ROUGH
 	db 28, DOUBLE_EDGE
 	db 36, RAIN_DANCE
 	db 0 ; no more level-up moves
@@ -2496,6 +2512,7 @@ AzumarillEvosAttacks:
 	db 10, WATER_GUN
 	db 15, ROLLOUT
 	db 25, BUBBLEBEAM
+	db 30, PLAY_ROUGH
 	db 36, DOUBLE_EDGE
 	db 48, RAIN_DANCE
 	db 0 ; no more level-up moves
@@ -2527,6 +2544,7 @@ HoppipEvosAttacks:
 	db 1, SPLASH
 	db 5, SYNTHESIS
 	db 5, TAIL_WHIP
+	db 7, FAIRY_WIND
 	db 10, TACKLE
 	db 13, POISONPOWDER
 	db 15, STUN_SPORE
@@ -2545,6 +2563,7 @@ SkiploomEvosAttacks:
 	db 1, TACKLE
 	db 5, SYNTHESIS
 	db 5, TAIL_WHIP
+	db 7, FAIRY_WIND
 	db 10, TACKLE
 	db 13, POISONPOWDER
 	db 15, STUN_SPORE
@@ -2562,6 +2581,7 @@ JumpluffEvosAttacks:
 	db 1, TACKLE
 	db 5, SYNTHESIS
 	db 5, TAIL_WHIP
+	db 7, FAIRY_WIND
 	db 10, TACKLE
 	db 13, POISONPOWDER
 	db 15, STUN_SPORE
@@ -2808,6 +2828,7 @@ SnubbullEvosAttacks:
 	db 19, LICK
 	db 26, ROAR
 	db 34, RAGE
+	db 38, PLAY_ROUGH
 	db 43, TAKE_DOWN
 	db 0 ; no more level-up moves
 
@@ -2821,6 +2842,7 @@ GranbullEvosAttacks:
 	db 19, LICK
 	db 28, ROAR
 	db 38, RAGE
+	db 43, PLAY_ROUGH
 	db 51, TAKE_DOWN
 	db 0 ; no more level-up moves
 
