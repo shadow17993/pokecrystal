@@ -167,7 +167,7 @@ MoveDescriptions::
 	dw SubstituteDescription
 	dw StruggleDescription
 	dw SketchDescription
-	dw TripleKickDescription
+	dw VacuumWaveDescription
 	dw ThiefDescription
 	dw SpiderWebDescription
 	dw MindReaderDescription
@@ -222,7 +222,7 @@ MoveDescriptions::
 	dw SafeguardDescription
 	dw PainSplitDescription
 	dw SacredFireDescription
-	dw MagnitudeDescription
+	dw BulldozeDescription
 	dw DynamicpunchDescription
 	dw MegahornDescription
 	dw DragonbreathDescription
@@ -251,7 +251,7 @@ MoveDescriptions::
 	dw FutureSightDescription
 	dw RockSmashDescription
 	dw WhirlpoolDescription
-	dw BeatUpDescription
+	dw StruggleBugDescription
 	dw FairyWindDescription
 	dw MoonblastDescription
 	dw PlayRoughDescription
@@ -928,9 +928,9 @@ SketchDescription:
 	db   "Copies the foe's"
 	next "move permanently.@"
 
-TripleKickDescription:
-	db   "Hits three times"
-	next "with rising power.@"
+VacuumWaveDescription:
+	db   "A wave of vacuum"
+	next "that lands first.@"
 
 ThiefDescription:
 	db   "An attack that may"
@@ -1148,9 +1148,9 @@ SacredFireDescription:
 	db   "An attack that may"
 	next "inflict a burn.@"
 
-MagnitudeDescription:
+BulldozeDescription:
 	db   "A ground attack"
-	next "with random power.@"
+	next "that lowers speed.@"
 
 DynamicpunchDescription:
 	db   "An attack that"
@@ -1264,7 +1264,7 @@ WhirlpoolDescription:
 	db   "Traps the foe for"
 	next "2-5 turns.@"
 
-BeatUpDescription:
+StruggleBugDescription:
 	db   "Party #MON join"
 	next "in the attack.@"
 

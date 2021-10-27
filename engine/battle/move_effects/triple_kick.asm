@@ -1,4 +1,4 @@
-BattleCommand_TripleKick:
+BattleCommand_VacuumWave:
 ; triplekick
 
 	ld a, [wBattleAnimParam]

@@ -177,7 +177,7 @@
 	const SFX_BALL_BOUNCE                 ; ae
 	const SFX_MOONLIGHT                   ; af
 	const SFX_ENCORE                      ; b0
-	const SFX_BEAT_UP                     ; b1
+	const SFX_STRUGGLE_BUG                     ; b1
 	const SFX_BATON_PASS                  ; b2
 	const SFX_BALL_WOBBLE                 ; b3
 	const SFX_SWEET_SCENT                 ; b4

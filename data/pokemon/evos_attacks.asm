@@ -666,7 +666,7 @@ DiglettEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SCRATCH
 	db 5, GROWL
-	db 9, MAGNITUDE
+	db 9, BULLDOZE
 	db 17, DIG
 	db 25, SAND_ATTACK
 	db 33, SLASH
@@ -679,9 +679,9 @@ DugtrioEvosAttacks:
 	db 1, TRI_ATTACK
 	db 1, SCRATCH
 	db 1, GROWL
-	db 1, MAGNITUDE
+	db 1, BULLDOZE
 	db 5, GROWL
-	db 9, MAGNITUDE
+	db 9, BULLDOZE
 	db 17, DIG
 	db 25, SAND_ATTACK
 	db 37, SLASH
@@ -995,7 +995,7 @@ GeodudeEvosAttacks:
 	db 1, TACKLE
 	db 6, DEFENSE_CURL
 	db 11, ROCK_THROW
-	db 16, MAGNITUDE
+	db 16, BULLDOZE
 	db 21, SELFDESTRUCT
 	db 26, HARDEN
 	db 31, ROLLOUT
@@ -1011,7 +1011,7 @@ GravelerEvosAttacks:
 	db 1, ROCK_THROW
 	db 6, DEFENSE_CURL
 	db 11, ROCK_THROW
-	db 16, MAGNITUDE
+	db 16, BULLDOZE
 	db 21, SELFDESTRUCT
 	db 27, HARDEN
 	db 34, ROLLOUT
@@ -1024,10 +1024,10 @@ GolemEvosAttacks:
 	db 1, TACKLE
 	db 1, DEFENSE_CURL
 	db 1, ROCK_THROW
-	db 1, MAGNITUDE
+	db 1, BULLDOZE
 	db 6, DEFENSE_CURL
 	db 11, ROCK_THROW
-	db 16, MAGNITUDE
+	db 16, BULLDOZE
 	db 21, SELFDESTRUCT
 	db 27, HARDEN
 	db 34, ROLLOUT
@@ -2161,8 +2161,8 @@ TotodileEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SCRATCH
 	db 1, FAIRY_WIND
-	db 1, MOONBLAST
-	db 1, PLAY_ROUGH
+	db 1, SHEER_COLD
+	db 1, BULLDOZE
 	db 7, RAGE
 	db 13, WATER_GUN
 	db 20, BITE
@@ -2907,7 +2907,7 @@ SneaselEvosAttacks:
 	db 33, FURY_SWIPES
 	db 41, AGILITY
 	db 49, SLASH
-	db 57, BEAT_UP
+	db 57, STRUGGLE_BUG ; REPLACE
 	db 65, METAL_CLAW
 	db 0 ; no more level-up moves
 
@@ -3180,7 +3180,7 @@ HitmontopEvosAttacks:
 	db 31, COUNTER
 	db 37, AGILITY
 	db 43, DETECT
-	db 49, TRIPLE_KICK
+	db 49, VACUUM_WAVE
 	db 0 ; no more level-up moves
 
 SmoochumEvosAttacks:

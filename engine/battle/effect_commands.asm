@@ -1676,7 +1676,7 @@ BattleCommand_CheckHit:
 
 .LockOn:
 ; Return nz if we are locked-on and aren't trying to use Earthquake,
-; Fissure or Magnitude on a monster that is flying.
+; Fissure or Bulldoze on a monster that is flying.
 	ld a, BATTLE_VARS_SUBSTATUS5_OPP
 	call GetBattleVarAddr
 	bit SUBSTATUS_LOCK_ON, [hl]
@@ -1695,7 +1695,7 @@ BattleCommand_CheckHit:
 	ret z
 	cp FISSURE
 	ret z
-	cp MAGNITUDE
+	cp BULLDOZE
 	ret z
 
 .LockedOn:
@@ -1753,7 +1753,7 @@ BattleCommand_CheckHit:
 	ret z
 	cp FISSURE
 	ret z
-	cp MAGNITUDE
+	cp BULLDOZE
 	ret
 
 .ThunderRain:
@@ -1994,7 +1994,7 @@ BattleCommand_MoveAnimNoSub:
 	jr z, .alternate_anim
 	cp EFFECT_POISON_MULTI_HIT
 	jr z, .alternate_anim
-	cp EFFECT_TRIPLE_KICK
+	cp EFFECT_VACUUM_WAVE
 	jr z, .triplekick
 	xor a
 	ld [wBattleAnimParam], a
@@ -2439,6 +2439,7 @@ BattleCommand_CheckFaint:
 
 	jr .finish
 
+; ???
 .no_dbond
 	ld a, BATTLE_VARS_MOVE_EFFECT
 	call GetBattleVar
@@ -2448,9 +2449,9 @@ BattleCommand_CheckFaint:
 	jr z, .multiple_hit_raise_sub
 	cp EFFECT_POISON_MULTI_HIT
 	jr z, .multiple_hit_raise_sub
-	cp EFFECT_TRIPLE_KICK
+	cp EFFECT_VACUUM_WAVE
 	jr z, .multiple_hit_raise_sub
-	cp EFFECT_BEAT_UP
+	cp EFFECT_STRUGGLE_BUG
 	jr nz, .finish
 
 .multiple_hit_raise_sub
@@ -3568,6 +3569,7 @@ DoSubstituteDamage:
 	jr z, .broke
 	jr nc, .done
 
+; ???
 .broke
 	ld a, BATTLE_VARS_SUBSTATUS4_OPP
 	call GetBattleVarAddr
@@ -3592,9 +3594,9 @@ DoSubstituteDamage:
 	jr z, .ok
 	cp EFFECT_POISON_MULTI_HIT
 	jr z, .ok
-	cp EFFECT_TRIPLE_KICK
+	cp EFFECT_VACUUM_WAVE
 	jr z, .ok
-	cp EFFECT_BEAT_UP
+	cp EFFECT_STRUGGLE_BUG
 	jr z, .ok
 	xor a
 	ld [hl], a
@@ -5336,9 +5338,9 @@ BattleCommand_EndLoop:
 	ld a, 1
 	jr z, .double_hit
 	ld a, [hl]
-	cp EFFECT_BEAT_UP
+	cp EFFECT_STRUGGLE_BUG ; ???
 	jr z, .beat_up
-	cp EFFECT_TRIPLE_KICK
+	cp EFFECT_VACUUM_WAVE ; ???
 	jr nz, .not_triple_kick
 .reject_triple_kick_sample
 	call BattleRandom
@@ -5374,7 +5376,7 @@ BattleCommand_EndLoop:
 	ld a, BATTLE_VARS_SUBSTATUS3
 	call GetBattleVarAddr
 	res SUBSTATUS_IN_LOOP, [hl]
-	call BattleCommand_BeatUpFailText
+	call BattleCommand_StruggleBugFailText
 	jp EndMoveEffect
 
 .not_triple_kick
@@ -5416,7 +5418,7 @@ BattleCommand_EndLoop:
 	push bc
 	ld a, BATTLE_VARS_MOVE_EFFECT
 	call GetBattleVar
-	cp EFFECT_BEAT_UP
+	cp EFFECT_STRUGGLE_BUG
 	jr z, .beat_up_2
 	call StdBattleTextbox
 .beat_up_2
