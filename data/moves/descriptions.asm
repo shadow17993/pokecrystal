@@ -3,8 +3,8 @@ MoveDescriptions::
 	table_width 2, MoveDescriptions
 	dw PoundDescription
 	dw KarateChopDescription
-	dw DoubleslapDescription
-	dw CometPunchDescription
+	dw SignalBeamDescription
+	dw MirrorShotDescription
 	dw GigaImpactDescription
 	dw PayDayDescription
 	dw FirePunchDescription
@@ -131,7 +131,7 @@ MoveDescriptions::
 	dw ClampDescription
 	dw SwiftDescription
 	dw SkullBashDescription
-	dw SpikeCannonDescription
+	dw PsychoCutDescription
 	dw ConstrictDescription
 	dw AmnesiaDescription
 	dw KinesisDescription
@@ -154,7 +154,7 @@ MoveDescriptions::
 	dw AcidArmorDescription
 	dw CrabhammerDescription
 	dw ExplosionDescription
-	dw FurySwipesDescription
+	dw FlashCannonDescription
 	dw BonemerangDescription
 	dw RestDescription
 	dw RockSlideDescription
@@ -272,13 +272,13 @@ KarateChopDescription:
 	db   "Has a high criti-"
 	next "cal hit ratio.@"
 
-DoubleslapDescription:
-	db   "Repeatedly slaps"
-	next "2-5 times.@"
+SignalBeamDescription:
+	db   "An attack that may"
+	next "cause confusion.@"
 
-CometPunchDescription:
-	db   "Repeatedly punches"
-	next "2-5 times.@"
+MirrorShotDescription:
+	db   "An attack that may"
+	next "lower ACCURACY.@"
 
 GigaImpactDescription:
 	db   "1st turn: Attack"
@@ -784,9 +784,9 @@ SkullBashDescription:
 	db   "1st turn: Prepare"
 	next "2nd turn: Attack@"
 
-SpikeCannonDescription:
-	db   "Fires spikes to"
-	next "hit 2-5 times.@"
+PsychoCutDescription:
+	db   "Has a high criti-"
+	next "cal hit ratio.@"
 
 ConstrictDescription:
 	db   "An attack that may"
@@ -876,9 +876,9 @@ ExplosionDescription:
 	db   "Very powerful but"
 	next "makes user faint.@"
 
-FurySwipesDescription:
-	db   "Quickly scratches"
-	next "2-5 times.@"
+FlashCannonDescription:
+	db   "An attack that may"
+	next "lower SPCL.DEF.@"
 
 BonemerangDescription:
 	db   "An attack that"

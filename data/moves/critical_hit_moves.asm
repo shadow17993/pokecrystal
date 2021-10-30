@@ -9,4 +9,5 @@ CriticalHitMoves:
 	db CROSS_CHOP
 	db LEAF_BLADE
 	db POISON_TAIL
+	db PSYCHO_CUT
 	db -1

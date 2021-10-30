@@ -48,7 +48,7 @@ PidgeyEggMoves:
 RattataEggMoves:
 	db SCREECH
 	db FLAME_WHEEL
-	db FURY_SWIPES
+	db FURY_ATTACK
 	db BITE
 	db COUNTER
 	db REVERSAL
@@ -453,7 +453,7 @@ ChikoritaEggMoves:
 	db -1 ; end
 
 CyndaquilEggMoves:
-	db FURY_SWIPES
+	db FURY_ATTACK
 	db QUICK_ATTACK
 	db REVERSAL
 	db THRASH
@@ -512,7 +512,7 @@ PichuEggMoves:
 	db BIDE
 	db PRESENT
 	db ENCORE
-	db DOUBLESLAP
+	db SIGNAL_BEAM
 	db -1 ; end
 
 CleffaEggMoves:
@@ -587,7 +587,7 @@ AipomEggMoves:
 	db AGILITY
 	db SPITE
 	db SHADOW_SNEAK ; REPLACE
-	db DOUBLESLAP
+	db SIGNAL_BEAM
 	db STRUGGLE_BUG ; REPLACE
 	db -1 ; end
 

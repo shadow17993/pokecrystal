@@ -8,8 +8,8 @@
 	const NO_MOVE      ; 00
 	const POUND        ; 01
 	const KARATE_CHOP  ; 02
-	const DOUBLESLAP   ; 03
-	const COMET_PUNCH  ; 04
+	const SIGNAL_BEAM  ; 03
+	const MIRROR_SHOT  ; 04
 	const GIGA_IMPACT  ; 05
 	const PAY_DAY      ; 06
 	const FIRE_PUNCH   ; 07
@@ -136,11 +136,11 @@
 	const CLAMP        ; 80
 	const SWIFT        ; 81
 	const SKULL_BASH   ; 82
-	const SPIKE_CANNON ; 83
+	const PSYCHO_CUT   ; 83
 	const CONSTRICT    ; 84
 	const AMNESIA      ; 85
 	const KINESIS      ; 86
-	const AIR_SLASH   ; 87
+	const AIR_SLASH    ; 87
 	const HI_JUMP_KICK ; 88
 	const GLARE        ; 89
 	const DREAM_EATER  ; 8a
@@ -159,7 +159,7 @@
 	const ACID_ARMOR   ; 97
 	const CRABHAMMER   ; 98
 	const EXPLOSION    ; 99
-	const FURY_SWIPES  ; 9a
+	const FLASH_CANNON ; 9a
 	const BONEMERANG   ; 9b
 	const REST         ; 9c
 	const ROCK_SLIDE   ; 9d

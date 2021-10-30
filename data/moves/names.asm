@@ -2,7 +2,7 @@ MoveNames::
 	list_start MoveNames
 	li "POUND"
 	li "KARATE CHOP"
-	li "DOUBLESLAP"
+	li "SIGNAL_BEAM"
 	li "COMET PUNCH"
 	li "GIGA IMPACT"
 	li "PAY DAY"

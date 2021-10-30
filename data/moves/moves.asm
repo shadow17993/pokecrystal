@@ -15,8 +15,8 @@ Moves:
 	table_width MOVE_LENGTH, Moves
 	move POUND,        EFFECT_NORMAL_HIT,         40, NORMAL,		PHYSICAL,     100, 35,   0
 	move KARATE_CHOP,  EFFECT_NORMAL_HIT,         50, FIGHTING,		PHYSICAL,     100, 25,   0
-	move DOUBLESLAP,   EFFECT_MULTI_HIT,          15, NORMAL,		PHYSICAL,     85, 10,   0
-	move COMET_PUNCH,  EFFECT_MULTI_HIT,          18, NORMAL,   	PHYSICAL,          85, 15,   0
+	move SIGNAL_BEAM,  EFFECT_CONFUSE_HIT,        75, BUG, 		    SPECIAL,      100, 15,   0
+	move MIRROR_SHOT,  EFFECT_ACCURACY_DOWN_HIT,  65, STEEL,   		SPECIAL,          85, 10,  30
 	move GIGA_IMPACT,  EFFECT_HYPER_BEAM,        150, NORMAL,   	PHYSICAL,         90,  5,   0
 	move PAY_DAY,      EFFECT_PAY_DAY,            40, NORMAL,   	PHYSICAL,         100, 20,   0
 	move FIRE_PUNCH,   EFFECT_BURN_HIT,           75, FIRE,     	PHYSICAL,         100, 15,  10
@@ -143,7 +143,7 @@ Moves:
 	move CLAMP,        EFFECT_TRAP_TARGET,        35, WATER,        PHYSICAL,              75, 10,   0
 	move SWIFT,        EFFECT_ALWAYS_HIT,         60, NORMAL,       SPECIAL,                  100, 20,   0
 	move SKULL_BASH,   EFFECT_SKULL_BASH,        100, NORMAL,       PHYSICAL,             100, 15,   0
-	move SPIKE_CANNON, EFFECT_MULTI_HIT,          20, NORMAL,       PHYSICAL,             100, 15,   0
+	move PSYCHO_CUT,   EFFECT_NORMAL_HIT,         70, PSYCHIC_TYPE, PHYSICAL,             100, 20,   0
 	move CONSTRICT,    EFFECT_SPEED_DOWN_HIT,     10, NORMAL,       PHYSICAL,             100, 35,  10
 	move AMNESIA,      EFFECT_SP_DEF_UP_2,         0, PSYCHIC_TYPE, STATUS,             100, 20,   0
 	move KINESIS,      EFFECT_ACCURACY_DOWN,       0, PSYCHIC_TYPE, STATUS,              80, 15,   0
@@ -166,7 +166,7 @@ Moves:
 	move ACID_ARMOR,   EFFECT_DEFENSE_UP_2,        0, POISON,       STATUS,             100, 40,   0
 	move CRABHAMMER,   EFFECT_NORMAL_HIT,         90, WATER,        PHYSICAL,               85, 10,   0
 	move EXPLOSION,    EFFECT_SELFDESTRUCT,      250, NORMAL,       PHYSICAL,              100,  5,   0
-	move FURY_SWIPES,  EFFECT_MULTI_HIT,          18, NORMAL,       PHYSICAL,               80, 15,   0
+	move FLASH_CANNON, EFFECT_SP_DEF_DOWN_HIT,    80, STEEL,        SPECIAL,               100, 10,  10
 	move BONEMERANG,   EFFECT_DOUBLE_HIT,         50, GROUND,       PHYSICAL,               90, 10,   0
 	move REST,         EFFECT_HEAL,                0, PSYCHIC_TYPE, STATUS,             100, 10,   0
 	move ROCK_SLIDE,   EFFECT_FLINCH_HIT,         75, ROCK,         PHYSICAL,               90, 10,  30
