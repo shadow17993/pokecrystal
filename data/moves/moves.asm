@@ -79,7 +79,7 @@ Moves:
 	move PECK,         EFFECT_NORMAL_HIT,         35, FLYING,   	PHYSICAL,             100, 35,   0
 	move DRILL_PECK,   EFFECT_NORMAL_HIT,         80, FLYING,   	PHYSICAL,             100, 20,   0
 	move SUBMISSION,   EFFECT_RECOIL_HIT,         80, FIGHTING, 	PHYSICAL,              80, 25,   0
-	move LOW_KICK,     EFFECT_FLINCH_HIT,         50, FIGHTING, 	PHYSICAL,              90, 20,  30
+	move ECHOED_VOICE, EFFECT_NORMAL_HIT,         40, NORMAL, 	    SPECIAL,               40, 15,   0
 	move COUNTER,      EFFECT_COUNTER,             1, FIGHTING, 	PHYSICAL,             100, 20,   0
 	move SEISMIC_TOSS, EFFECT_LEVEL_DAMAGE,        1, FIGHTING, 	PHYSICAL,             100, 20,   0
 	move STRENGTH,     EFFECT_NORMAL_HIT,         80, NORMAL,   	PHYSICAL,             100, 15,   0
@@ -240,7 +240,7 @@ Moves:
 	move DRAGONBREATH, EFFECT_PARALYZE_HIT,       60, DRAGON,       SPECIAL,               100, 20,  30
 	move BATON_PASS,   EFFECT_BATON_PASS,          0, NORMAL,       STATUS,             100, 40,   0
 	move ENCORE,       EFFECT_ENCORE,              0, NORMAL,       STATUS,             100,  5,   0
-	move PURSUIT,      EFFECT_PURSUIT,            40, DARK,         PHYSICAL,              100, 20,   0
+	move POISON_TAIL,  EFFECT_POISON_HIT,         50, POISON,       PHYSICAL,              100, 25,  10
 	move RAPID_SPIN,   EFFECT_RAPID_SPIN,         20, NORMAL,       PHYSICAL,              100, 40,   0
 	move SWEET_SCENT,  EFFECT_EVASION_DOWN,        0, NORMAL,       STATUS,             100, 20,   0
 	move IRON_TAIL,    EFFECT_DEFENSE_DOWN_HIT,  100, STEEL,        PHYSICAL,               75, 15,  30

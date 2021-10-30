@@ -218,7 +218,7 @@ BeedrillEvosAttacks:
 	db 15, FOCUS_ENERGY
 	db 20, TWINEEDLE
 	db 25, POWER_GEM ; REPLACE
-	db 30, PURSUIT
+	db 30, POISON_TAIL ; REPLACE
 	db 35, PIN_MISSILE
 	db 40, AGILITY
 	db 0 ; no more level-up moves
@@ -274,7 +274,7 @@ RattataEvosAttacks:
 	db 7, QUICK_ATTACK
 	db 13, HYPER_FANG
 	db 20, FOCUS_ENERGY
-	db 27, PURSUIT
+	db 27, POISON_TAIL ; REPLACE
 	db 34, SUPER_FANG
 	db 0 ; no more level-up moves
 
@@ -286,7 +286,7 @@ RaticateEvosAttacks:
 	db 7, QUICK_ATTACK
 	db 13, HYPER_FANG
 	db 20, SCARY_FACE
-	db 30, PURSUIT
+	db 30, POISON_TAIL ; REPLACE
 	db 40, SUPER_FANG
 	db 0 ; no more level-up moves
 
@@ -297,7 +297,7 @@ SpearowEvosAttacks:
 	db 1, GROWL
 	db 7, LEER
 	db 13, FURY_ATTACK
-	db 25, PURSUIT
+	db 25, POISON_TAIL ; REPLACE
 	db 31, MIRROR_MOVE
 	db 37, DRILL_PECK
 	db 43, AGILITY
@@ -311,7 +311,7 @@ FearowEvosAttacks:
 	db 1, FURY_ATTACK
 	db 7, LEER
 	db 13, FURY_ATTACK
-	db 26, PURSUIT
+	db 26, POISON_TAIL
 	db 32, MIRROR_MOVE
 	db 40, DRILL_PECK
 	db 47, AGILITY
@@ -750,7 +750,7 @@ MankeyEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SCRATCH
 	db 1, LEER
-	db 9, LOW_KICK
+	db 9, ECHOED_VOICE ; REPLACE
 	db 15, KARATE_CHOP
 	db 21, FURY_SWIPES
 	db 27, FOCUS_ENERGY
@@ -764,9 +764,9 @@ PrimeapeEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SCRATCH
 	db 1, LEER
-	db 1, LOW_KICK
+	db 1, ECHOED_VOICE ; REPLACE
 	db 1, POWER_GEM ; REPLACE
-	db 9, LOW_KICK
+	db 9, ECHOED_VOICE ; REPLACE
 	db 15, KARATE_CHOP
 	db 21, FURY_SWIPES
 	db 27, FOCUS_ENERGY
@@ -877,7 +877,7 @@ AlakazamEvosAttacks:
 MachopEvosAttacks:
 	db EVOLVE_LEVEL, 28, MACHOKE
 	db 0 ; no more evolutions
-	db 1, LOW_KICK
+	db 1, ECHOED_VOICE
 	db 1, LEER
 	db 7, FOCUS_ENERGY
 	db 13, KARATE_CHOP
@@ -892,7 +892,7 @@ MachopEvosAttacks:
 MachokeEvosAttacks:
 	db EVOLVE_TRADE, -1, MACHAMP
 	db 0 ; no more evolutions
-	db 1, LOW_KICK
+	db 1, ECHOED_VOICE ; REPLACE
 	db 1, LEER
 	db 1, FOCUS_ENERGY
 	db 8, FOCUS_ENERGY
@@ -907,7 +907,7 @@ MachokeEvosAttacks:
 
 MachampEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, LOW_KICK
+	db 1, ECHOED_VOICE ; REPLACE
 	db 1, LEER
 	db 1, FOCUS_ENERGY
 	db 8, FOCUS_ENERGY
@@ -1144,7 +1144,7 @@ DoduoEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, PECK
 	db 1, GROWL
-	db 9, PURSUIT
+	db 9, POISON_TAIL ; REPLACE
 	db 13, FURY_ATTACK
 	db 21, TRI_ATTACK
 	db 25, POWER_GEM ; REPLACE
@@ -1156,9 +1156,9 @@ DodrioEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, PECK
 	db 1, GROWL
-	db 1, PURSUIT
+	db 1, POISON_TAIL ; REPLACE
 	db 1, FURY_ATTACK
-	db 9, PURSUIT
+	db 9, POISON_TAIL ; REPLACE
 	db 13, FURY_ATTACK
 	db 21, TRI_ATTACK
 	db 25, POWER_GEM ; REPLACE
@@ -1463,7 +1463,7 @@ HitmonchanEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, COMET_PUNCH
 	db 7, AGILITY
-	db 13, PURSUIT
+	db 13, POISON_TAIL ; REPLACE
 	db 26, THUNDERPUNCH
 	db 26, ICE_PUNCH
 	db 26, FIRE_PUNCH
@@ -1684,7 +1684,7 @@ ScytherEvosAttacks:
 	db 1, QUICK_ATTACK
 	db 1, LEER
 	db 6, FOCUS_ENERGY
-	db 12, PURSUIT
+	db 12, POISON_TAIL ; REPLACE
 	db 18, FALSE_SWIPE
 	db 24, AGILITY
 	db 30, WING_ATTACK
@@ -1757,7 +1757,7 @@ TaurosEvosAttacks:
 	db 8, POWER_GEM ; REPLACE
 	db 13, HORN_ATTACK
 	db 19, SCARY_FACE
-	db 26, PURSUIT
+	db 26, POISON_TAIL ; REPLACE
 	db 34, REST
 	db 43, THRASH
 	db 53, TAKE_DOWN
@@ -2522,7 +2522,7 @@ SudowoodoEvosAttacks:
 	db 1, ROCK_THROW
 	db 1, MIMIC
 	db 10, FLAIL
-	db 19, LOW_KICK
+	db 19, ECHOED_VOICE ; REPLACE
 	db 28, ROCK_SLIDE
 	db 37, FAINT_ATTACK
 	db 46, SLAM
@@ -2682,7 +2682,7 @@ UmbreonEvosAttacks:
 	db 1, TACKLE
 	db 1, TAIL_WHIP
 	db 8, SAND_ATTACK
-	db 16, PURSUIT
+	db 16, POISON_TAIL ; REPLACE
 	db 23, QUICK_ATTACK
 	db 30, CONFUSE_RAY
 	db 36, FAINT_ATTACK
@@ -2694,7 +2694,7 @@ UmbreonEvosAttacks:
 MurkrowEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, PECK
-	db 11, PURSUIT
+	db 11, POISON_TAIL ; REPLACE
 	db 16, HAZE
 	db 26, NIGHT_SHADE
 	db 31, FAINT_ATTACK
@@ -2787,7 +2787,7 @@ DunsparceEvosAttacks:
 	db 5, DEFENSE_CURL
 	db 13, GLARE
 	db 18, SPITE
-	db 26, PURSUIT
+	db 26, POISON_TAIL ; REPLACE
 	db 30, SCREECH
 	db 38, TAKE_DOWN
 	db 0 ; no more level-up moves
@@ -2864,7 +2864,7 @@ ScizorEvosAttacks:
 	db 1, QUICK_ATTACK
 	db 1, LEER
 	db 6, FOCUS_ENERGY
-	db 12, PURSUIT
+	db 12, POISON_TAIL ; REPLACE
 	db 18, FALSE_SWIPE
 	db 24, AGILITY
 	db 30, METAL_CLAW
@@ -3174,7 +3174,7 @@ HitmontopEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, ROLLING_KICK
 	db 7, FOCUS_ENERGY
-	db 13, PURSUIT
+	db 13, POISON_TAIL ; REPLACE
 	db 19, QUICK_ATTACK
 	db 25, RAPID_SPIN
 	db 31, COUNTER

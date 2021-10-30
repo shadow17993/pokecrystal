@@ -72,7 +72,7 @@
 	const PECK         ; 40
 	const DRILL_PECK   ; 41
 	const SUBMISSION   ; 42
-	const LOW_KICK     ; 43
+	const ECHOED_VOICE ; 43
 	const COUNTER      ; 44
 	const SEISMIC_TOSS ; 45
 	const STRENGTH     ; 46
@@ -233,7 +233,7 @@
 	const DRAGONBREATH ; e1
 	const BATON_PASS   ; e2
 	const ENCORE       ; e3
-	const PURSUIT      ; e4
+	const POISON_TAIL      ; e4
 	const RAPID_SPIN   ; e5
 	const SWEET_SCENT  ; e6
 	const IRON_TAIL    ; e7

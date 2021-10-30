@@ -67,7 +67,7 @@ MoveDescriptions::
 	dw PeckDescription
 	dw DrillPeckDescription
 	dw SubmissionDescription
-	dw LowKickDescription
+	dw EchoedVoiceDescription
 	dw CounterDescription
 	dw SeismicTossDescription
 	dw StrengthDescription
@@ -228,7 +228,7 @@ MoveDescriptions::
 	dw DragonbreathDescription
 	dw BatonPassDescription
 	dw EncoreDescription
-	dw PursuitDescription
+	dw PoisonTailDescription
 	dw RapidSpinDescription
 	dw SweetScentDescription
 	dw IronTailDescription
@@ -528,9 +528,9 @@ SubmissionDescription:
 	db   "An attack that al-"
 	next "so hurts the user.@"
 
-LowKickDescription:
-	db   "An attack that may"
-	next "cause flinching.@"
+EchoedVoiceDescription:
+	db   "Attacks foe with"
+	next "echoing voice.@"
 
 CounterDescription:
 	db   "Returns a physical"
@@ -1172,9 +1172,9 @@ EncoreDescription:
 	db   "Makes the foe re-"
 	next "peat 2-6 times.@"
 
-PursuitDescription:
-	db   "Heavily strikes"
-	next "switching #MON.@"
+PoisonTailDescription:
+	db   "An attack that may"
+	next "poison the target.@"
 
 RapidSpinDescription:
 	db   "A high-speed"
