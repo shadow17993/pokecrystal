@@ -39,7 +39,7 @@ MoveDescriptions::
 	dw TakeDownDescription
 	dw ThrashDescription
 	dw DoubleEdgeDescription
-	dw TailWhipDescription
+	dw DragonClawDescription
 	dw PoisonStingDescription
 	dw TwineedleDescription
 	dw PinMissileDescription
@@ -416,9 +416,9 @@ DoubleEdgeDescription:
 	db   "A tackle that also"
 	next "hurts the user.@"
 
-TailWhipDescription:
-	db   "Lowers the foe's"
-	next "DEFENSE.@"
+DragonClawDescription:
+	db   "Attacks the foe"
+	next "with sharp claws.@"
 
 PoisonStingDescription:
 	db   "An attack that may"
@@ -941,8 +941,8 @@ SpiderWebDescription:
 	next "or switching.@"
 
 WildChargeDescription:
-	db   "Ensures the next"
-	next "attack will hit.@"
+	db   "A tackle that also"
+	next "hurts the user.@"
 
 NightmareDescription:
 	db   "A sleeper loses"
@@ -1049,8 +1049,8 @@ IcyWindDescription:
 	next "lowers SPEED.@"
 
 FlareBlitzDescription:
-	db   "Evades attack that"
-	next "turn. It may fail.@"
+	db   "A tackle that also"
+	next "hurts the user.@"
 
 BoneRushDescription:
 	db   "An attack that"

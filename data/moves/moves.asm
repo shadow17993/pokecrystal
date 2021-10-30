@@ -51,7 +51,7 @@ Moves:
 	move TAKE_DOWN,    EFFECT_RECOIL_HIT,         90, NORMAL,   	PHYSICAL,          85, 20,   0
 	move THRASH,       EFFECT_RAMPAGE,            90, NORMAL,   	PHYSICAL,         100, 20,   0
 	move DOUBLE_EDGE,  EFFECT_RECOIL_HIT,        120, NORMAL,   	PHYSICAL,         100, 15,   0
-	move TAIL_WHIP,    EFFECT_DEFENSE_DOWN,        0, NORMAL,   	STATUS,             100, 30,   0
+	move DRAGON_CLAW,  EFFECT_NORMAL_HIT,         80, NORMAL,   	PHYSICAL,         100, 15,   0
 	move POISON_STING, EFFECT_POISON_HIT,         15, POISON,   	PHYSICAL,         100, 35,  30
 	move TWINEEDLE,    EFFECT_POISON_MULTI_HIT,   25, BUG,      	PHYSICAL,         100, 20,  20
 	move PIN_MISSILE,  EFFECT_MULTI_HIT,          14, BUG,      	PHYSICAL,          85, 20,   0

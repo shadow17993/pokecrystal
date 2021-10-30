@@ -38,7 +38,7 @@ MoveNames::
 	li "TAKE DOWN"
 	li "THRASH"
 	li "DOUBLE-EDGE"
-	li "TAIL WHIP"
+	li "DRAGON CLAW"
 	li "POISON STING"
 	li "TWINEEDLE"
 	li "PIN MISSILE"
