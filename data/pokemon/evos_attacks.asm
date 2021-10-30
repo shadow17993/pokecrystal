@@ -1335,7 +1335,7 @@ KrabbyEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, BUBBLE
 	db 5, LEER
-	db 12, VICEGRIP
+	db 12, HYPER_VOICE ; REPLACE
 	db 16, HARDEN
 	db 23, STOMP
 	db 27, HORN_DRILL
@@ -1347,9 +1347,9 @@ KinglerEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, BUBBLE
 	db 1, LEER
-	db 1, VICEGRIP
+	db 1, HYPER_VOICE ; REPLACE
 	db 5, LEER
-	db 12, VICEGRIP
+	db 12, HYPER_VOICE ; REPLACE
 	db 16, HARDEN
 	db 23, STOMP
 	db 27, HORN_DRILL
@@ -1449,7 +1449,7 @@ HitmonleeEvosAttacks:
 	db 1, DOUBLE_KICK
 	db 6, MEDITATE
 	db 11, ROLLING_KICK
-	db 16, JUMP_KICK
+	db 16, AURA_SPHERE ; REPLACE
 	db 21, FOCUS_ENERGY
 	db 26, HI_JUMP_KICK
 	db 31, MIND_READER
@@ -1468,7 +1468,7 @@ HitmonchanEvosAttacks:
 	db 26, ICE_PUNCH
 	db 26, FIRE_PUNCH
 	db 32, MACH_PUNCH
-	db 38, MEGA_PUNCH
+	db 38, GIGA_IMPACT ; REPLACE
 	db 44, DETECT
 	db 50, COUNTER
 	db 0 ; no more level-up moves
@@ -1577,7 +1577,7 @@ KangaskhanEvosAttacks:
 	db 7, LEER
 	db 13, BITE
 	db 19, TAIL_WHIP
-	db 25, MEGA_PUNCH
+	db 25, GIGA_IMPACT ; REPLACE
 	db 31, POWER_GEM ; REPLACE
 	db 37, ENDURE
 	db 43, DIZZY_PUNCH
@@ -1740,7 +1740,7 @@ MagmarEvosAttacks:
 
 PinsirEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, VICEGRIP
+	db 1, HYPER_VOICE ; REPLACE
 	db 7, FOCUS_ENERGY
 	db 13, BIND
 	db 19, SEISMIC_TOSS
@@ -2061,7 +2061,7 @@ MewEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, POUND
 	db 10, TRANSFORM
-	db 20, MEGA_PUNCH
+	db 20, GIGA_IMPACT ; REPLACE
 	db 30, METRONOME
 	db 40, PSYCHIC_M
 	db 50, ANCIENTPOWER

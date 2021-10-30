@@ -17,13 +17,13 @@ Moves:
 	move KARATE_CHOP,  EFFECT_NORMAL_HIT,         50, FIGHTING,		PHYSICAL,     100, 25,   0
 	move DOUBLESLAP,   EFFECT_MULTI_HIT,          15, NORMAL,		PHYSICAL,     85, 10,   0
 	move COMET_PUNCH,  EFFECT_MULTI_HIT,          18, NORMAL,   	PHYSICAL,          85, 15,   0
-	move MEGA_PUNCH,   EFFECT_NORMAL_HIT,         80, NORMAL,   	PHYSICAL,          85, 20,   0
+	move GIGA_IMPACT,  EFFECT_HYPER_BEAM,        150, NORMAL,   	PHYSICAL,         90,  5,   0
 	move PAY_DAY,      EFFECT_PAY_DAY,            40, NORMAL,   	PHYSICAL,         100, 20,   0
 	move FIRE_PUNCH,   EFFECT_BURN_HIT,           75, FIRE,     	PHYSICAL,         100, 15,  10
 	move ICE_PUNCH,    EFFECT_FREEZE_HIT,         75, ICE,      	PHYSICAL,         100, 15,  10
 	move THUNDERPUNCH, EFFECT_PARALYZE_HIT,       75, ELECTRIC, 	PHYSICAL,         100, 15,  10
 	move SCRATCH,      EFFECT_NORMAL_HIT,         40, NORMAL,   	PHYSICAL,         100, 35,   0
-	move VICEGRIP,     EFFECT_NORMAL_HIT,         55, NORMAL,   	PHYSICAL,         100, 30,   0
+	move HYPER_VOICE,  EFFECT_NORMAL_HIT,         90, NORMAL,   	SPECIAL,         100, 10,   0
 	move SHEER_COLD,   EFFECT_OHKO,                0, ICE,   		SPECIAL,          30,  5,   0
 	move RAZOR_WIND,   EFFECT_RAZOR_WIND,         80, NORMAL,   	SPECIAL,          75, 10,   0
 	move SWORDS_DANCE, EFFECT_ATTACK_UP_2,         0, NORMAL,   	STATUS,         100, 30,   0
@@ -38,7 +38,7 @@ Moves:
 	move STOMP,        EFFECT_STOMP,              65, NORMAL,   	PHYSICAL,         100, 20,  30
 	move DOUBLE_KICK,  EFFECT_DOUBLE_HIT,         30, FIGHTING, 	PHYSICAL,         100, 30,   0
 	move MEGA_KICK,    EFFECT_NORMAL_HIT,        120, NORMAL,   	PHYSICAL,          75,  5,   0
-	move JUMP_KICK,    EFFECT_JUMP_KICK,          70, FIGHTING, 	PHYSICAL,          95, 25,   0
+	move AURA_SPHERE,  EFFECT_ALWAYS_HIT,         80, FIGHTING, 	SPECIAL,           95, 20,   0
 	move ROLLING_KICK, EFFECT_FLINCH_HIT,         60, FIGHTING, 	PHYSICAL,          85, 15,  30
 	move SAND_ATTACK,  EFFECT_ACCURACY_DOWN,       0, GROUND,   	STATUS,             100, 15,   0
 	move HEADBUTT,     EFFECT_FLINCH_HIT,         70, NORMAL,   	PHYSICAL,         100, 15,  30

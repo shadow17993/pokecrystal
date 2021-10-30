@@ -5,13 +5,13 @@ MoveDescriptions::
 	dw KarateChopDescription
 	dw DoubleslapDescription
 	dw CometPunchDescription
-	dw MegaPunchDescription
+	dw GigaImpactDescription
 	dw PayDayDescription
 	dw FirePunchDescription
 	dw IcePunchDescription
 	dw ThunderpunchDescription
 	dw ScratchDescription
-	dw VicegripDescription
+	dw HyperVoiceDescription
 	dw SheerColdDescription
 	dw RazorWindDescription
 	dw SwordsDanceDescription
@@ -26,7 +26,7 @@ MoveDescriptions::
 	dw StompDescription
 	dw DoubleKickDescription
 	dw MegaKickDescription
-	dw JumpKickDescription
+	dw AuraSphereDescription
 	dw RollingKickDescription
 	dw SandAttackDescription
 	dw HeadbuttDescription
@@ -280,9 +280,9 @@ CometPunchDescription:
 	db   "Repeatedly punches"
 	next "2-5 times.@"
 
-MegaPunchDescription:
-	db   "A powerful punch"
-	next "thrown very hard.@"
+GigaImpactDescription:
+	db   "1st turn: Attack"
+	next "2nd turn: Rest@"
 
 PayDayDescription:
 	db   "Throws coins. Gets"
@@ -304,9 +304,9 @@ ScratchDescription:
 	db   "Scratches with"
 	next "sharp claws.@"
 
-VicegripDescription:
-	db   "Grips with power-"
-	next "ful pincers.@"
+HyperVoiceDescription:
+	db   "Attacks with an"
+	next "echoing shout.@"
 
 SheerColdDescription:
 	db   "A one-hit KO,"
@@ -364,9 +364,9 @@ MegaKickDescription:
 	db   "A powerful kicking"
 	next "attack.@"
 
-JumpKickDescription:
-	db   "May miss, damaging"
-	next "the user.@"
+AuraSphereDescription:
+	db   "An attack that"
+	next "never misses.@"
 
 RollingKickDescription:
 	db   "A fast, spinning"

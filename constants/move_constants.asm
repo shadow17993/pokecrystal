@@ -10,13 +10,13 @@
 	const KARATE_CHOP  ; 02
 	const DOUBLESLAP   ; 03
 	const COMET_PUNCH  ; 04
-	const MEGA_PUNCH   ; 05
+	const GIGA_IMPACT  ; 05
 	const PAY_DAY      ; 06
 	const FIRE_PUNCH   ; 07
 	const ICE_PUNCH    ; 08
 	const THUNDERPUNCH ; 09
 	const SCRATCH      ; 0a
-	const VICEGRIP     ; 0b
+	const HYPER_VOICE  ; 0b
 	const SHEER_COLD   ; 0c
 	const RAZOR_WIND   ; 0d
 	const SWORDS_DANCE ; 0e
@@ -31,7 +31,7 @@
 	const STOMP        ; 17
 	const DOUBLE_KICK  ; 18
 	const MEGA_KICK    ; 19
-	const JUMP_KICK    ; 1a
+	const AURA_SPHERE  ; 1a
 	const ROLLING_KICK ; 1b
 	const SAND_ATTACK  ; 1c
 	const HEADBUTT     ; 1d
