@@ -836,7 +836,7 @@ PoliwrathEvosAttacks:
 	db 1, DOUBLESLAP
 	db 1, SUBMISSION
 	db 35, SUBMISSION
-	db 51, MIND_READER
+	db 51, WILD_CHARGE ; REPLACE
 	db 0 ; no more level-up moves
 
 AbraEvosAttacks:
@@ -1452,7 +1452,7 @@ HitmonleeEvosAttacks:
 	db 16, AURA_SPHERE ; REPLACE
 	db 21, FOCUS_ENERGY
 	db 26, HI_JUMP_KICK
-	db 31, MIND_READER
+	db 31, WILD_CHARGE ; REPLACE
 	db 36, FORESIGHT
 	db 41, ENDURE
 	db 46, MEGA_KICK
@@ -1469,7 +1469,7 @@ HitmonchanEvosAttacks:
 	db 26, FIRE_PUNCH
 	db 32, MACH_PUNCH
 	db 38, GIGA_IMPACT ; REPLACE
-	db 44, DETECT
+	db 44, FLARE_BLITZ ; REPLACE
 	db 50, COUNTER
 	db 0 ; no more level-up moves
 
@@ -1963,7 +1963,7 @@ ArticunoEvosAttacks:
 	db 1, POWDER_SNOW
 	db 13, MIST
 	db 25, AGILITY
-	db 37, MIND_READER
+	db 37, WILD_CHARGE ; REPLACE
 	db 49, ICE_BEAM
 	db 61, REFLECT
 	db 73, BLIZZARD
@@ -1975,7 +1975,7 @@ ZapdosEvosAttacks:
 	db 1, THUNDERSHOCK
 	db 13, THUNDER_WAVE
 	db 25, AGILITY
-	db 37, DETECT
+	db 37, FLARE_BLITZ ; REPLACE
 	db 49, DRILL_PECK
 	db 61, LIGHT_SCREEN
 	db 73, THUNDER
@@ -2632,7 +2632,7 @@ YanmaEvosAttacks:
 	db 7, QUICK_ATTACK
 	db 13, DOUBLE_TEAM
 	db 19, MUD_SHOT ; REPLACE
-	db 25, DETECT
+	db 25, FLARE_BLITZ ; REPLACE
 	db 31, SUPERSONIC
 	db 37, WING_ATTACK
 	db 43, SCREECH
@@ -3179,7 +3179,7 @@ HitmontopEvosAttacks:
 	db 25, RAPID_SPIN
 	db 31, COUNTER
 	db 37, AGILITY
-	db 43, DETECT
+	db 43, FLARE_BLITZ ; REPLACE
 	db 49, VACUUM_WAVE
 	db 0 ; no more level-up moves
 
@@ -3231,7 +3231,7 @@ MiltankEvosAttacks:
 	db 4, GROWL
 	db 8, DEFENSE_CURL
 	db 13, STOMP
-	db 19, MILK_DRINK
+	db 19, RECOVER
 	db 26, BIDE
 	db 34, ROLLOUT
 	db 43, BODY_SLAM

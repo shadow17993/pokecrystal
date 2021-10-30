@@ -175,7 +175,7 @@
 	const VACUUM_WAVE  ; a7
 	const THIEF        ; a8
 	const SPIDER_WEB   ; a9
-	const MIND_READER  ; aa
+	const WILD_CHARGE  ; aa
 	const NIGHTMARE    ; ab
 	const FLAME_WHEEL  ; ac
 	const SNORE        ; ad
@@ -202,7 +202,7 @@
 	const DESTINY_BOND ; c2
 	const PERISH_SONG  ; c3
 	const ICY_WIND     ; c4
-	const DETECT       ; c5
+	const FLARE_BLITZ       ; c5
 	const BONE_RUSH    ; c6
 	const LOCK_ON      ; c7
 	const OUTRAGE      ; c8
@@ -213,7 +213,7 @@
 	const ROLLOUT      ; cd
 	const FALSE_SWIPE  ; ce
 	const SWAGGER      ; cf
-	const MILK_DRINK   ; d0
+	const DARK_PULSE   ; d0
 	const SPARK        ; d1
 	const FURY_CUTTER  ; d2
 	const STEEL_WING   ; d3

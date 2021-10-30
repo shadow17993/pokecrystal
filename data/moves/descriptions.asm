@@ -170,7 +170,7 @@ MoveDescriptions::
 	dw VacuumWaveDescription
 	dw ThiefDescription
 	dw SpiderWebDescription
-	dw MindReaderDescription
+	dw WildChargeDescription
 	dw NightmareDescription
 	dw FlameWheelDescription
 	dw SnoreDescription
@@ -197,7 +197,7 @@ MoveDescriptions::
 	dw DestinyBondDescription
 	dw PerishSongDescription
 	dw IcyWindDescription
-	dw DetectDescription
+	dw FlareBlitzDescription
 	dw BoneRushDescription
 	dw LockOnDescription
 	dw OutrageDescription
@@ -208,7 +208,7 @@ MoveDescriptions::
 	dw RolloutDescription
 	dw FalseSwipeDescription
 	dw SwaggerDescription
-	dw MilkDrinkDescription
+	dw DarkPulseDescription
 	dw SparkDescription
 	dw FuryCutterDescription
 	dw SteelWingDescription
@@ -940,7 +940,7 @@ SpiderWebDescription:
 	db   "Prevents fleeing"
 	next "or switching.@"
 
-MindReaderDescription:
+WildChargeDescription:
 	db   "Ensures the next"
 	next "attack will hit.@"
 
@@ -1048,7 +1048,7 @@ IcyWindDescription:
 	db   "An icy attack that"
 	next "lowers SPEED.@"
 
-DetectDescription:
+FlareBlitzDescription:
 	db   "Evades attack that"
 	next "turn. It may fail.@"
 
@@ -1092,7 +1092,7 @@ SwaggerDescription:
 	db   "Causes confusion"
 	next "and raises ATTACK.@"
 
-MilkDrinkDescription:
+DarkPulseDescription:
 	db   "Restores HP by 1/2"
 	next "the max HP.@"
 

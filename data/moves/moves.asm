@@ -182,7 +182,7 @@ Moves:
 	move VACUUM_WAVE,  EFFECT_PRIORITY_HIT,       40, FIGHTING,     SPECIAL,               100, 30,   0
 	move THIEF,        EFFECT_THIEF,              40, DARK,         PHYSICAL,              100, 10, 100
 	move SPIDER_WEB,   EFFECT_MEAN_LOOK,           0, BUG,          STATUS,             100, 10,   0
-	move MIND_READER,  EFFECT_LOCK_ON,             0, NORMAL,       STATUS,             100,  5,   0
+	move WILD_CHARGE,  EFFECT_RECOIL_HIT,         90, ELECTRIC,     PHYSICAL,             100,  15,   0
 	move NIGHTMARE,    EFFECT_NIGHTMARE,           0, GHOST,        STATUS,             100, 15,   0
 	move FLAME_WHEEL,  EFFECT_FLAME_WHEEL,        60, FIRE,         PHYSICAL,              100, 25,  10
 	move SNORE,        EFFECT_SNORE,              40, NORMAL,       PHYSICAL,              100, 15,  30
@@ -209,7 +209,7 @@ Moves:
 	move DESTINY_BOND, EFFECT_DESTINY_BOND,        0, GHOST,        STATUS,             100,  5,   0
 	move PERISH_SONG,  EFFECT_PERISH_SONG,         0, NORMAL,       STATUS,             100,  5,   0
 	move ICY_WIND,     EFFECT_SPEED_DOWN_HIT,     55, ICE,          SPECIAL,                95, 15, 100
-	move DETECT,       EFFECT_PROTECT,             0, FIGHTING,     STATUS,             100,  5,   0
+	move FLARE_BLITZ,  EFFECT_RECOIL_HIT,        120, FIRE,         PHYSICAL,             100,  15,   0
 	move BONE_RUSH,    EFFECT_MULTI_HIT,          25, GROUND,       PHYSICAL,               80, 10,   0
 	move LOCK_ON,      EFFECT_LOCK_ON,             0, NORMAL,       STATUS,             100,  5,   0
 	move OUTRAGE,      EFFECT_RAMPAGE,            90, DRAGON,       PHYSICAL,              100, 15,   0
@@ -220,7 +220,7 @@ Moves:
 	move ROLLOUT,      EFFECT_ROLLOUT,            30, ROCK,         PHYSICAL,               90, 20,   0
 	move FALSE_SWIPE,  EFFECT_FALSE_SWIPE,        40, NORMAL,       PHYSICAL,              100, 40,   0
 	move SWAGGER,      EFFECT_SWAGGER,             0, NORMAL,       STATUS,              90, 15, 100
-	move MILK_DRINK,   EFFECT_HEAL,                0, NORMAL,       STATUS,             100, 10,   0
+	move DARK_PULSE,   EFFECT_FLINCH_HIT,         80, DARK,         SPECIAL,             100, 15,   20
 	move SPARK,        EFFECT_PARALYZE_HIT,       65, ELECTRIC,     SPECIAL,               100, 20,  30
 	move FURY_CUTTER,  EFFECT_FURY_CUTTER,        10, BUG,          PHYSICAL,               95, 20,   0
 	move STEEL_WING,   EFFECT_DEFENSE_UP_HIT,     70, STEEL,        PHYSICAL,               90, 25,  10
