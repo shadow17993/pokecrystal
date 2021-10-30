@@ -217,7 +217,7 @@ ENDM
 
 ; see data/moves/tmhm_moves.asm for moves
 TM01 EQU const_value
-	add_tm DYNAMICPUNCH ; bf
+	add_tm ICICLE_CRASH ; REPLACE ; bf
 	add_tm HEADBUTT     ; c0
 	add_tm CURSE        ; c1
 	add_tm ROLLOUT      ; c2

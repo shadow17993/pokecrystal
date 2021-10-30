@@ -496,7 +496,7 @@ LedybaEggMoves:
 SpinarakEggMoves:
 	db PSYBEAM
 	db DISABLE
-	db SONICBOOM
+	db MUD_SHOT ; REPLACE
 	db BATON_PASS
 	db POISON_TAIL ; REPLACE
 	db -1 ; end

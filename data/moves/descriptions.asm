@@ -49,7 +49,7 @@ MoveDescriptions::
 	dw RoarDescription
 	dw SingDescription
 	dw SupersonicDescription
-	dw SonicboomDescription
+	dw MudShotDescription
 	dw DisableDescription
 	dw AcidDescription
 	dw EmberDescription
@@ -101,7 +101,7 @@ MoveDescriptions::
 	dw QuickAttackDescription
 	dw PowerGemDescription
 	dw TeleportDescription
-	dw NightShadeDescription
+	dw EnergyBallDescription
 	dw MimicDescription
 	dw ScreechDescription
 	dw DoubleTeamDescription
@@ -223,7 +223,7 @@ MoveDescriptions::
 	dw PainSplitDescription
 	dw SacredFireDescription
 	dw BulldozeDescription
-	dw DynamicpunchDescription
+	dw IcicleCrashDescription
 	dw MegahornDescription
 	dw DragonbreathDescription
 	dw BatonPassDescription
@@ -456,9 +456,9 @@ SupersonicDescription:
 	db   "Sound waves that"
 	next "cause confusion.@"
 
-SonicboomDescription:
-	db   "Always inflicts"
-	next "20HP damage.@"
+MudShotDescription:
+	db   "Reduces the foe's"
+	next "SPEED.@"
 
 DisableDescription:
 	db   "Disables the foe's"
@@ -664,9 +664,9 @@ TeleportDescription:
 	db   "A move for fleeing"
 	next "from battle.@"
 
-NightShadeDescription:
-	db   "The user's level"
-	next "equals damage HP.@"
+EnergyBallDescription:
+	db   "An attack that may"
+	next "lower SPCL.DEF.@"
 
 MimicDescription:
 	db   "Copies a move used"
@@ -1152,9 +1152,9 @@ BulldozeDescription:
 	db   "A ground attack"
 	next "that lowers speed.@"
 
-DynamicpunchDescription:
-	db   "An attack that"
-	next "always confuses.@"
+IcicleCrashDescription:
+	db   "An attack that may"
+	next "cause flinching.@"
 
 MegahornDescription:
 	db   "A powerful charge"

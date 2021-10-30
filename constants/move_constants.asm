@@ -54,7 +54,7 @@
 	const ROAR         ; 2e
 	const SING         ; 2f
 	const SUPERSONIC   ; 30
-	const SONICBOOM    ; 31
+	const MUD_SHOT     ; 31
 	const DISABLE      ; 32
 	const ACID         ; 33
 	const EMBER        ; 34
@@ -106,7 +106,7 @@
 	const QUICK_ATTACK ; 62
 	const POWER_GEM    ; 63
 	const TELEPORT     ; 64
-	const NIGHT_SHADE  ; 65
+	const ENERGY_BALL  ; 65
 	const MIMIC        ; 66
 	const SCREECH      ; 67
 	const DOUBLE_TEAM  ; 68
@@ -227,13 +227,13 @@
 	const SAFEGUARD    ; db
 	const PAIN_SPLIT   ; dc
 	const SACRED_FIRE  ; dd
-	const BULLDOZE    ; de
-	const DYNAMICPUNCH ; df
+	const BULLDOZE     ; de
+	const ICICLE_CRASH ; df
 	const MEGAHORN     ; e0
 	const DRAGONBREATH ; e1
 	const BATON_PASS   ; e2
 	const ENCORE       ; e3
-	const POISON_TAIL      ; e4
+	const POISON_TAIL  ; e4
 	const RAPID_SPIN   ; e5
 	const SWEET_SCENT  ; e6
 	const IRON_TAIL    ; e7

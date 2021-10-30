@@ -1103,7 +1103,7 @@ MagnemiteEvosAttacks:
 	db 1, TACKLE
 	db 6, THUNDERSHOCK
 	db 11, SUPERSONIC
-	db 16, SONICBOOM
+	db 16, MUD_SHOT ; REPLACE
 	db 21, THUNDER_WAVE
 	db 27, LOCK_ON
 	db 33, SWIFT
@@ -1116,10 +1116,10 @@ MagnetonEvosAttacks:
 	db 1, TACKLE
 	db 1, THUNDERSHOCK
 	db 1, SUPERSONIC
-	db 1, SONICBOOM
+	db 1, MUD_SHOT ; REPLACE
 	db 6, THUNDERSHOCK
 	db 11, SUPERSONIC
-	db 16, SONICBOOM
+	db 16, MUD_SHOT ; REPLACE
 	db 21, THUNDER_WAVE
 	db 27, LOCK_ON
 	db 35, TRI_ATTACK
@@ -1251,7 +1251,7 @@ GastlyEvosAttacks:
 	db 8, SPITE
 	db 13, MEAN_LOOK
 	db 16, CURSE
-	db 21, NIGHT_SHADE
+	db 21, ENERGY_BALL ; REPLACE
 	db 28, CONFUSE_RAY
 	db 33, DREAM_EATER
 	db 36, DESTINY_BOND
@@ -1266,7 +1266,7 @@ HaunterEvosAttacks:
 	db 8, SPITE
 	db 13, MEAN_LOOK
 	db 16, CURSE
-	db 21, NIGHT_SHADE
+	db 21, ENERGY_BALL ; REPLACE
 	db 31, CONFUSE_RAY
 	db 39, DREAM_EATER
 	db 48, DESTINY_BOND
@@ -1280,7 +1280,7 @@ GengarEvosAttacks:
 	db 8, SPITE
 	db 13, MEAN_LOOK
 	db 16, CURSE
-	db 21, NIGHT_SHADE
+	db 21, ENERGY_BALL ; REPLACE
 	db 31, CONFUSE_RAY
 	db 39, DREAM_EATER
 	db 48, DESTINY_BOND
@@ -1362,7 +1362,7 @@ VoltorbEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 9, SCREECH
-	db 17, SONICBOOM
+	db 17, MUD_SHOT ; REPLACE
 	db 23, SELFDESTRUCT
 	db 29, ROLLOUT
 	db 33, LIGHT_SCREEN
@@ -1375,10 +1375,10 @@ ElectrodeEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, SCREECH
-	db 1, SONICBOOM
+	db 1, MUD_SHOT ; REPLACE
 	db 1, SELFDESTRUCT
 	db 9, SCREECH
-	db 17, SONICBOOM
+	db 17, MUD_SHOT ; REPLACE
 	db 23, SELFDESTRUCT
 	db 29, ROLLOUT
 	db 34, LIGHT_SCREEN
@@ -2295,7 +2295,7 @@ SpinarakEvosAttacks:
 	db 1, STRING_SHOT
 	db 6, SCARY_FACE
 	db 11, CONSTRICT
-	db 17, NIGHT_SHADE
+	db 17, ENERGY_BALL ; REPLACE
 	db 23, LEECH_LIFE
 	db 30, FURY_SWIPES
 	db 37, SPIDER_WEB
@@ -2311,7 +2311,7 @@ AriadosEvosAttacks:
 	db 1, CONSTRICT
 	db 6, SCARY_FACE
 	db 11, CONSTRICT
-	db 17, NIGHT_SHADE
+	db 17, ENERGY_BALL ; REPLACE
 	db 25, LEECH_LIFE
 	db 34, FURY_SWIPES
 	db 43, SPIDER_WEB
@@ -2419,7 +2419,7 @@ NatuEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, PECK
 	db 1, LEER
-	db 10, NIGHT_SHADE
+	db 10, ENERGY_BALL ; REPLACE
 	db 20, TELEPORT
 	db 30, FUTURE_SIGHT
 	db 40, CONFUSE_RAY
@@ -2430,8 +2430,8 @@ XatuEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, PECK
 	db 1, LEER
-	db 1, NIGHT_SHADE
-	db 10, NIGHT_SHADE
+	db 1, ENERGY_BALL ; REPLACE
+	db 10, ENERGY_BALL ; REPLACE
 	db 20, TELEPORT
 	db 35, FUTURE_SIGHT
 	db 50, CONFUSE_RAY
@@ -2631,7 +2631,7 @@ YanmaEvosAttacks:
 	db 1, FORESIGHT
 	db 7, QUICK_ATTACK
 	db 13, DOUBLE_TEAM
-	db 19, SONICBOOM
+	db 19, MUD_SHOT ; REPLACE
 	db 25, DETECT
 	db 31, SUPERSONIC
 	db 37, WING_ATTACK
@@ -2696,7 +2696,7 @@ MurkrowEvosAttacks:
 	db 1, PECK
 	db 11, POISON_TAIL ; REPLACE
 	db 16, HAZE
-	db 26, NIGHT_SHADE
+	db 26, ENERGY_BALL ; REPLACE
 	db 31, FAINT_ATTACK
 	db 41, MEAN_LOOK
 	db 0 ; no more level-up moves

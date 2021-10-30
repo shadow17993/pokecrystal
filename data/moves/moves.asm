@@ -61,7 +61,7 @@ Moves:
 	move ROAR,         EFFECT_FORCE_SWITCH,        0, NORMAL,   	STATUS,             100, 20,   0
 	move SING,         EFFECT_SLEEP,               0, NORMAL,   	STATUS,              55, 15,   0
 	move SUPERSONIC,   EFFECT_CONFUSE,             0, NORMAL,   	STATUS,              55, 20,   0
-	move SONICBOOM,    EFFECT_STATIC_DAMAGE,      20, NORMAL,   	SPECIAL,              90, 20,   0
+	move MUD_SHOT,     EFFECT_SPEED_DOWN_HIT,     55, GROUND,   	SPECIAL,              95, 15,   100
 	move DISABLE,      EFFECT_DISABLE,             0, NORMAL,   	STATUS,              55, 20,   0
 	move ACID,         EFFECT_DEFENSE_DOWN_HIT,   40, POISON,   	SPECIAL,             100, 30,  10
 	move EMBER,        EFFECT_BURN_HIT,           40, FIRE,     	SPECIAL,            100, 25,  10
@@ -113,7 +113,7 @@ Moves:
 	move QUICK_ATTACK, EFFECT_PRIORITY_HIT,       40, NORMAL,       PHYSICAL,             100, 30,   0
 	move POWER_GEM,    EFFECT_NORMAL_HIT,         80, ROCK,         SPECIAL,             100, 20,   0
 	move TELEPORT,     EFFECT_TELEPORT,            0, PSYCHIC_TYPE, STATUS,             100, 20,   0
-	move NIGHT_SHADE,  EFFECT_LEVEL_DAMAGE,        1, GHOST,        SPECIAL,                  100, 15,   0
+	move ENERGY_BALL,  EFFECT_SP_DEF_DOWN_HIT,    90, GRASS,        SPECIAL,            100, 10,  10
 	move MIMIC,        EFFECT_MIMIC,               0, NORMAL,       STATUS,             100, 10,   0
 	move SCREECH,      EFFECT_DEFENSE_DOWN_2,      0, NORMAL,       STATUS,              85, 40,   0
 	move DOUBLE_TEAM,  EFFECT_EVASION_UP,          0, NORMAL,       STATUS,             100, 15,   0
@@ -235,7 +235,7 @@ Moves:
 	move PAIN_SPLIT,   EFFECT_PAIN_SPLIT,          0, NORMAL,       STATUS,             100, 20,   0
 	move SACRED_FIRE,  EFFECT_SACRED_FIRE,       100, FIRE,         SPECIAL,                95,  5,  50
 	move BULLDOZE,     EFFECT_SPEED_DOWN_HIT,     60, GROUND,       PHYSICAL,              100, 20, 100
-	move DYNAMICPUNCH, EFFECT_CONFUSE_HIT,       100, FIGHTING,     PHYSICAL,               50,  5, 100
+	move ICICLE_CRASH, EFFECT_FLINCH_HIT,         85, ICE,          PHYSICAL,               90, 10,  30
 	move MEGAHORN,     EFFECT_NORMAL_HIT,        120, BUG,          PHYSICAL,               85, 10,   0
 	move DRAGONBREATH, EFFECT_PARALYZE_HIT,       60, DRAGON,       SPECIAL,               100, 20,  30
 	move BATON_PASS,   EFFECT_BATON_PASS,          0, NORMAL,       STATUS,             100, 40,   0
