@@ -25,7 +25,7 @@ Moves:
 	move SCRATCH,      EFFECT_NORMAL_HIT,         40, NORMAL,   	PHYSICAL,         100, 35,   0
 	move HYPER_VOICE,  EFFECT_NORMAL_HIT,         90, NORMAL,   	SPECIAL,         100, 10,   0
 	move SHEER_COLD,   EFFECT_OHKO,                0, ICE,   		SPECIAL,          30,  5,   0
-	move RAZOR_WIND,   EFFECT_RAZOR_WIND,         80, NORMAL,   	SPECIAL,          75, 10,   0
+	move HEX,   	   EFFECT_NORMAL_HIT,         65, GHOST,   	    SPECIAL,         100, 10,   0
 	move SWORDS_DANCE, EFFECT_ATTACK_UP_2,         0, NORMAL,   	STATUS,         100, 30,   0
 	move CUT,          EFFECT_NORMAL_HIT,         50, NORMAL,   	PHYSICAL,          95, 30,   0
 	move GUST,         EFFECT_GUST,               40, FLYING,   	SPECIAL,         100, 35,   0
@@ -94,7 +94,7 @@ Moves:
 	move SLEEP_POWDER, EFFECT_SLEEP,               0, GRASS,    	STATUS,                  75, 15,   0
 	move PETAL_DANCE,  EFFECT_RAMPAGE,            70, GRASS,    	SPECIAL,                  100, 20,   0
 	move STRING_SHOT,  EFFECT_SPEED_DOWN,          0, BUG,      	STATUS,                  95, 40,   0
-	move DRAGON_RAGE,  EFFECT_STATIC_DAMAGE,      40, DRAGON,   	SPECIAL,                  100, 10,   0
+	move DRAGON_PULSE, EFFECT_NORMAL_HIT,         85, DRAGON,   	SPECIAL,                  100, 10,   0
 	move FIRE_SPIN,    EFFECT_TRAP_TARGET,        15, FIRE,     	SPECIAL,                   70, 15,   0
 	move THUNDERSHOCK, EFFECT_PARALYZE_HIT,       40, ELECTRIC, 	SPECIAL,                  100, 30,  10
 	move THUNDERBOLT,  EFFECT_PARALYZE_HIT,       95, ELECTRIC, 	SPECIAL,                  100, 15,  10
@@ -157,7 +157,7 @@ Moves:
 	move LOVELY_KISS,  EFFECT_SLEEP,               0, NORMAL,       STATUS,               75, 10,   0
 	move SKY_ATTACK,   EFFECT_SKY_ATTACK,        140, FLYING,       PHYSICAL,              90,  5,   0
 	move TRANSFORM,    EFFECT_TRANSFORM,           0, NORMAL,       STATUS,             100, 10,   0
-	move BUBBLE,       EFFECT_SPEED_DOWN_HIT,     20, WATER,        SPECIAL,               100, 30,  10
+	move AIR_CUTTER,   EFFECT_NORMAL_HIT,         60, FLYING,       SPECIAL,               100, 25,  0
 	move DIZZY_PUNCH,  EFFECT_CONFUSE_HIT,        70, NORMAL,       PHYSICAL,              100, 10,  20
 	move SPORE,        EFFECT_SLEEP,               0, GRASS,        STATUS,             100, 15,   0
 	move FLASH,        EFFECT_ACCURACY_DOWN,       0, NORMAL,       STATUS,              70, 20,   0

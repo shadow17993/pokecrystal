@@ -17,7 +17,7 @@ BulbasaurEggMoves:
 	db LIGHT_SCREEN
 	db SKULL_BASH
 	db SAFEGUARD
-	db RAZOR_WIND
+	db HEX
 	db PETAL_DANCE
 	db -1 ; end
 
@@ -371,7 +371,7 @@ HorseaEggMoves:
 	db OCTAZOOKA
 	db DISABLE
 	db SPLASH
-	db DRAGON_RAGE
+	db DRAGON_PULSE
 	db -1 ; end
 
 GoldeenEggMoves:
@@ -390,7 +390,7 @@ ScytherEggMoves:
 	db COUNTER
 	db SAFEGUARD
 	db BATON_PASS
-	db RAZOR_WIND
+	db HEX
 	db REVERSAL
 	db LIGHT_SCREEN
 	db -1 ; end
@@ -466,7 +466,7 @@ TotodileEggMoves:
 	db THRASH
 	db HYDRO_PUMP
 	db ANCIENTPOWER
-	db RAZOR_WIND
+	db HEX
 	db ROCK_SLIDE
 	db -1 ; end
 
@@ -643,7 +643,7 @@ DunsparceEggMoves:
 GligarEggMoves:
 	db METAL_CLAW
 	db WING_ATTACK
-	db RAZOR_WIND
+	db HEX
 	db COUNTER
 	db -1 ; end
 

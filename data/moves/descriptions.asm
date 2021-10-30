@@ -13,7 +13,7 @@ MoveDescriptions::
 	dw ScratchDescription
 	dw HyperVoiceDescription
 	dw SheerColdDescription
-	dw RazorWindDescription
+	dw HexDescription
 	dw SwordsDanceDescription
 	dw CutDescription
 	dw GustDescription
@@ -82,7 +82,7 @@ MoveDescriptions::
 	dw SleepPowderDescription
 	dw PetalDanceDescription
 	dw StringShotDescription
-	dw DragonRageDescription
+	dw DragonPulseDescription
 	dw FireSpinDescription
 	dw ThundershockDescription
 	dw ThunderboltDescription
@@ -145,7 +145,7 @@ MoveDescriptions::
 	dw LovelyKissDescription
 	dw SkyAttackDescription
 	dw TransformDescription
-	dw BubbleDescription
+	dw AirCutterDescription
 	dw DizzyPunchDescription
 	dw SporeDescription
 	dw FlashDescription
@@ -312,9 +312,9 @@ SheerColdDescription:
 	db   "A one-hit KO,"
 	next "ice attack.@"
 
-RazorWindDescription:
-	db   "1st turn: Prepare"
-	next "2nd turn: Attack@"
+HexDescription:
+	db   "Power increases if"
+	next "foe has status@"
 
 SwordsDanceDescription:
 	db   "A dance that in-"
@@ -588,9 +588,9 @@ StringShotDescription:
 	db   "A move that lowers"
 	next "the foe's SPEED.@"
 
-DragonRageDescription:
-	db   "Always inflicts"
-	next "40HP damage.@"
+DragonPulseDescription:
+	db   "Attacks with a"
+	next "shock wave.@"
 
 FireSpinDescription:
 	db   "Traps foe in fire"
@@ -840,9 +840,9 @@ TransformDescription:
 	db   "The user assumes"
 	next "the foe's guise.@"
 
-BubbleDescription:
-	db   "An attack that may"
-	next "reduce SPEED.@"
+AirCutterDescription:
+	db   "Has a high criti-"
+	next "cal hit ratio.@"
 
 DizzyPunchDescription:
 	db   "An attack that may"

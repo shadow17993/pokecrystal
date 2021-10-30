@@ -80,7 +80,7 @@ CharmanderEvosAttacks:
 	db 25, SCARY_FACE
 	db 31, FLAMETHROWER
 	db 37, SLASH
-	db 43, DRAGON_RAGE
+	db 43, DRAGON_PULSE
 	db 49, FIRE_SPIN
 	db 0 ; no more level-up moves
 
@@ -96,7 +96,7 @@ CharmeleonEvosAttacks:
 	db 27, SCARY_FACE
 	db 34, FLAMETHROWER
 	db 41, SLASH
-	db 48, DRAGON_RAGE
+	db 48, DRAGON_PULSE
 	db 55, FIRE_SPIN
 	db 0 ; no more level-up moves
 
@@ -113,7 +113,7 @@ CharizardEvosAttacks:
 	db 34, FLAMETHROWER
 	db 36, WING_ATTACK
 	db 44, SLASH
-	db 54, DRAGON_RAGE
+	db 54, DRAGON_PULSE
 	db 64, FIRE_SPIN
 	db 0 ; no more level-up moves
 
@@ -122,7 +122,7 @@ SquirtleEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 4, TAIL_WHIP
-	db 7, BUBBLE
+	db 7, AIR_CUTTER
 	db 10, WITHDRAW
 	db 13, WATER_GUN
 	db 18, BITE
@@ -138,9 +138,9 @@ WartortleEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, TAIL_WHIP
-	db 1, BUBBLE
+	db 1, AIR_CUTTER
 	db 4, TAIL_WHIP
-	db 7, BUBBLE
+	db 7, AIR_CUTTER
 	db 10, WITHDRAW
 	db 13, WATER_GUN
 	db 19, BITE
@@ -155,10 +155,10 @@ BlastoiseEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, TAIL_WHIP
-	db 1, BUBBLE
+	db 1, AIR_CUTTER
 	db 1, WITHDRAW
 	db 4, TAIL_WHIP
-	db 7, BUBBLE
+	db 7, AIR_CUTTER
 	db 10, WITHDRAW
 	db 13, WATER_GUN
 	db 19, BITE
@@ -803,7 +803,7 @@ ArcanineEvosAttacks:
 PoliwagEvosAttacks:
 	db EVOLVE_LEVEL, 25, POLIWHIRL
 	db 0 ; no more evolutions
-	db 1, BUBBLE
+	db 1, AIR_CUTTER
 	db 7, HYPNOSIS
 	db 13, WATER_GUN
 	db 19, DOUBLESLAP
@@ -817,7 +817,7 @@ PoliwhirlEvosAttacks:
 	db EVOLVE_ITEM, WATER_STONE, POLIWRATH
 	db EVOLVE_TRADE, KINGS_ROCK, POLITOED
 	db 0 ; no more evolutions
-	db 1, BUBBLE
+	db 1, AIR_CUTTER
 	db 1, HYPNOSIS
 	db 1, WATER_GUN
 	db 7, HYPNOSIS
@@ -1333,7 +1333,7 @@ HypnoEvosAttacks:
 KrabbyEvosAttacks:
 	db EVOLVE_LEVEL, 28, KINGLER
 	db 0 ; no more evolutions
-	db 1, BUBBLE
+	db 1, AIR_CUTTER
 	db 5, LEER
 	db 12, HYPER_VOICE ; REPLACE
 	db 16, HARDEN
@@ -1345,7 +1345,7 @@ KrabbyEvosAttacks:
 
 KinglerEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, BUBBLE
+	db 1, AIR_CUTTER
 	db 1, LEER
 	db 1, HYPER_VOICE ; REPLACE
 	db 5, LEER
@@ -1587,7 +1587,7 @@ KangaskhanEvosAttacks:
 HorseaEvosAttacks:
 	db EVOLVE_LEVEL, 32, SEADRA
 	db 0 ; no more evolutions
-	db 1, BUBBLE
+	db 1, AIR_CUTTER
 	db 8, SMOKESCREEN
 	db 15, LEER
 	db 22, WATER_GUN
@@ -1599,7 +1599,7 @@ HorseaEvosAttacks:
 SeadraEvosAttacks:
 	db EVOLVE_TRADE, DRAGON_SCALE, KINGDRA
 	db 0 ; no more evolutions
-	db 1, BUBBLE
+	db 1, AIR_CUTTER
 	db 1, SMOKESCREEN
 	db 1, LEER
 	db 1, WATER_GUN
@@ -1775,7 +1775,7 @@ GyaradosEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, THRASH
 	db 20, BITE
-	db 25, DRAGON_RAGE
+	db 25, DRAGON_PULSE
 	db 30, LEER
 	db 35, TWISTER
 	db 40, HYDRO_PUMP
@@ -2000,7 +2000,7 @@ DratiniEvosAttacks:
 	db 1, LEER
 	db 8, THUNDER_WAVE
 	db 15, TWISTER
-	db 22, DRAGON_RAGE
+	db 22, DRAGON_PULSE
 	db 29, SHADOW_SNEAK ; REPLACE
 	db 36, AGILITY
 	db 43, SAFEGUARD
@@ -2017,7 +2017,7 @@ DragonairEvosAttacks:
 	db 1, TWISTER
 	db 8, THUNDER_WAVE
 	db 15, TWISTER
-	db 22, DRAGON_RAGE
+	db 22, DRAGON_PULSE
 	db 29, SHADOW_SNEAK ; REPLACE
 	db 38, AGILITY
 	db 47, SAFEGUARD
@@ -2033,7 +2033,7 @@ DragoniteEvosAttacks:
 	db 1, TWISTER
 	db 8, THUNDER_WAVE
 	db 15, TWISTER
-	db 22, DRAGON_RAGE
+	db 22, DRAGON_PULSE
 	db 29, SHADOW_SNEAK ; REPLACE
 	db 38, AGILITY
 	db 47, SAFEGUARD
@@ -2335,7 +2335,7 @@ CrobatEvosAttacks:
 ChinchouEvosAttacks:
 	db EVOLVE_LEVEL, 27, LANTURN
 	db 0 ; no more evolutions
-	db 1, BUBBLE
+	db 1, AIR_CUTTER
 	db 1, THUNDER_WAVE
 	db 5, SUPERSONIC
 	db 13, FLAIL
@@ -2348,7 +2348,7 @@ ChinchouEvosAttacks:
 
 LanturnEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, BUBBLE
+	db 1, AIR_CUTTER
 	db 1, THUNDER_WAVE
 	db 1, SUPERSONIC
 	db 5, SUPERSONIC
@@ -2997,7 +2997,7 @@ CorsolaEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 7, HARDEN
-	db 13, BUBBLE
+	db 13, AIR_CUTTER
 	db 19, RECOVER
 	db 25, BUBBLEBEAM
 	db 31, SPIKE_CANNON
@@ -3039,7 +3039,7 @@ DelibirdEvosAttacks:
 MantineEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, BUBBLE
+	db 1, AIR_CUTTER
 	db 10, SUPERSONIC
 	db 18, BUBBLEBEAM
 	db 25, TAKE_DOWN
@@ -3086,7 +3086,7 @@ HoundoomEvosAttacks:
 
 KingdraEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, BUBBLE
+	db 1, AIR_CUTTER
 	db 1, SMOKESCREEN
 	db 1, LEER
 	db 1, WATER_GUN
