@@ -64,7 +64,7 @@ SpearowEggMoves:
 
 EkansEggMoves:
 	db POISON_TAIL ; REPLACE
-	db SLAM
+	db SHADOW_SNEAK ; REPLACE
 	db SPITE
 	db STRUGGLE_BUG ; REPLACE
 	db CRUNCH
@@ -259,7 +259,7 @@ SeelEggMoves:
 	db PERISH_SONG
 	db DISABLE
 	db PECK
-	db SLAM
+	db SHADOW_SNEAK ; REPLACE
 	db ENCORE
 	db -1 ; end
 
@@ -298,7 +298,7 @@ KrabbyEggMoves:
 	db HAZE
 	db AMNESIA
 	db FLAIL
-	db SLAM
+	db SHADOW_SNEAK ; REPLACE
 	db -1 ; end
 
 ExeggcuteEggMoves:
@@ -413,7 +413,7 @@ EeveeEggMoves:
 OmanyteEggMoves:
 	db BUBBLEBEAM
 	db AURORA_BEAM
-	db SLAM
+	db SHADOW_SNEAK ; REPLACE
 	db SUPERSONIC
 	db HAZE
 	db -1 ; end
@@ -586,7 +586,7 @@ AipomEggMoves:
 	db POISON_TAIL ; REPLACE
 	db AGILITY
 	db SPITE
-	db SLAM
+	db SHADOW_SNEAK ; REPLACE
 	db DOUBLESLAP
 	db STRUGGLE_BUG ; REPLACE
 	db -1 ; end
@@ -733,7 +733,7 @@ MantineEggMoves:
 	db TWISTER
 	db HYDRO_PUMP
 	db HAZE
-	db SLAM
+	db SHADOW_SNEAK ; REPLACE
 	db -1 ; end
 
 SkarmoryEggMoves:

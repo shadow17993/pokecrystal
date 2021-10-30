@@ -21,7 +21,7 @@ MoveDescriptions::
 	dw WhirlwindDescription
 	dw FlyDescription
 	dw BindDescription
-	dw SlamDescription
+	dw ShadowSneakDescription
 	dw VineWhipDescription
 	dw StompDescription
 	dw DoubleKickDescription
@@ -121,7 +121,7 @@ MoveDescriptions::
 	dw MetronomeDescription
 	dw MirrorMoveDescription
 	dw SelfdestructDescription
-	dw EggBombDescription
+	dw ShadowClawDescription
 	dw LickDescription
 	dw SmogDescription
 	dw SludgeDescription
@@ -344,9 +344,9 @@ BindDescription:
 	db   "Binds the target"
 	next "for 2-5 turns.@"
 
-SlamDescription:
-	db   "Slams the foe with"
-	next "a tail, vine, etc.@"
+ShadowSneakDescription:
+	db   "Lets the user get"
+	next "in the first hit.@"
 
 VineWhipDescription:
 	db   "Whips the foe with"
@@ -744,9 +744,9 @@ SelfdestructDescription:
 	db   "Powerful but makes"
 	next "the user faint.@"
 
-EggBombDescription:
-	db   "Eggs are hurled at"
-	next "the foe.@"
+ShadowClawDescription:
+	db   "Has a high criti-"
+	next "cal hit ratio.@"
 
 LickDescription:
 	db   "An attack that may"

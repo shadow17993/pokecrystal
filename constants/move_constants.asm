@@ -26,7 +26,7 @@
 	const WHIRLWIND    ; 12
 	const FLY          ; 13
 	const BIND         ; 14
-	const SLAM         ; 15
+	const SHADOW_SNEAK ; 15
 	const VINE_WHIP    ; 16
 	const STOMP        ; 17
 	const DOUBLE_KICK  ; 18
@@ -126,7 +126,7 @@
 	const METRONOME    ; 76
 	const MIRROR_MOVE  ; 77
 	const SELFDESTRUCT ; 78
-	const EGG_BOMB     ; 79
+	const SHADOW_CLAW  ; 79
 	const LICK         ; 7a
 	const SMOG         ; 7b
 	const SLUDGE       ; 7c

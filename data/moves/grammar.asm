@@ -12,7 +12,7 @@ MoveGrammar:
 	db SMOKESCREEN
 	db WITHDRAW
 	db DEFENSE_CURL
-	db EGG_BOMB
+	db SHADOW_CLAW
 	db SMOG
 	db BONE_CLUB
 	db FLASH
@@ -62,7 +62,7 @@ MoveGrammar:
 	db WING_ATTACK
 	db FLY
 	db BIND
-	db SLAM
+	db SHADOW_SNEAK
 	db HORN_ATTACK
 	db WRAP
 	db THRASH
