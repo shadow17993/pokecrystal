@@ -140,7 +140,7 @@
 	const CONSTRICT    ; 84
 	const AMNESIA      ; 85
 	const KINESIS      ; 86
-	const SOFTBOILED   ; 87
+	const AIR_SLASH   ; 87
 	const HI_JUMP_KICK ; 88
 	const GLARE        ; 89
 	const DREAM_EATER  ; 8a
@@ -169,7 +169,7 @@
 	const TRI_ATTACK   ; a1
 	const SUPER_FANG   ; a2
 	const SLASH        ; a3
-	const SUBSTITUTE   ; a4
+	const BREAKING_SWIPE   ; a4
 	const STRUGGLE     ; a5
 	const SKETCH       ; a6
 	const VACUUM_WAVE  ; a7
@@ -197,7 +197,7 @@
 	const MUD_SLAP     ; bd
 	const OCTAZOOKA    ; be
 	const SPIKES       ; bf
-	const ZAP_CANNON   ; c0
+	const LEAF_BLADE   ; c0
 	const FORESIGHT    ; c1
 	const DESTINY_BOND ; c2
 	const PERISH_SONG  ; c3

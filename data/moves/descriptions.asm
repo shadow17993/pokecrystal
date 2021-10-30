@@ -135,7 +135,7 @@ MoveDescriptions::
 	dw ConstrictDescription
 	dw AmnesiaDescription
 	dw KinesisDescription
-	dw SoftboiledDescription
+	dw AirSlashDescription
 	dw HiJumpKickDescription
 	dw GlareDescription
 	dw DreamEaterDescription
@@ -164,7 +164,7 @@ MoveDescriptions::
 	dw TriAttackDescription
 	dw SuperFangDescription
 	dw SlashDescription
-	dw SubstituteDescription
+	dw BreakingSwipeDescription
 	dw StruggleDescription
 	dw SketchDescription
 	dw VacuumWaveDescription
@@ -192,7 +192,7 @@ MoveDescriptions::
 	dw MudSlapDescription
 	dw OctazookaDescription
 	dw SpikesDescription
-	dw ZapCannonDescription
+	dw LeafBladeDescription
 	dw ForesightDescription
 	dw DestinyBondDescription
 	dw PerishSongDescription
@@ -800,9 +800,9 @@ KinesisDescription:
 	db   "Reduces the foe's"
 	next "accuracy.@"
 
-SoftboiledDescription:
-	db   "Restores HP by 1/2"
-	next "the user's max HP.@"
+AirSlashDescription:
+	db   "An attack that may"
+	next "cause flinching.@"
 
 HiJumpKickDescription:
 	db   "May miss and hurt"
@@ -916,9 +916,9 @@ SlashDescription:
 	db   "Has a high criti-"
 	next "cal hit ratio.@"
 
-SubstituteDescription:
-	db   "Makes a decoy with"
-	next "1/4 user's max HP.@"
+BreakingSwipeDescription:
+	db   "A move that lowers"
+	next "the foe's ATTACK.@"
 
 StruggleDescription:
 	db   "Used only if all"
@@ -1028,9 +1028,9 @@ SpikesDescription:
 	db   "Hurts foes when"
 	next "they switch out.@"
 
-ZapCannonDescription:
-	db   "An attack that"
-	next "always paralyzes.@"
+LeafBladeDescription:
+	db   "Has a high criti-"
+	next "cal hit ratio.@"
 
 ForesightDescription:
 	db   "Negates accuracy"

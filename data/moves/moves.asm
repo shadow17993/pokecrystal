@@ -147,7 +147,7 @@ Moves:
 	move CONSTRICT,    EFFECT_SPEED_DOWN_HIT,     10, NORMAL,       PHYSICAL,             100, 35,  10
 	move AMNESIA,      EFFECT_SP_DEF_UP_2,         0, PSYCHIC_TYPE, STATUS,             100, 20,   0
 	move KINESIS,      EFFECT_ACCURACY_DOWN,       0, PSYCHIC_TYPE, STATUS,              80, 15,   0
-	move SOFTBOILED,   EFFECT_HEAL,                0, NORMAL,       STATUS,             100, 10,   0
+	move AIR_SLASH,    EFFECT_FLINCH_HIT,         75, FLYING,       SPECIAL,             95, 15,   30
 	move HI_JUMP_KICK, EFFECT_JUMP_KICK,          85, FIGHTING,     PHYSICAL,              90, 20,   0
 	move GLARE,        EFFECT_PARALYZE,            0, NORMAL,       STATUS,              75, 30,   0
 	move DREAM_EATER,  EFFECT_DREAM_EATER,       100, PSYCHIC_TYPE, SPECIAL,               100, 15,   0
@@ -176,7 +176,7 @@ Moves:
 	move TRI_ATTACK,   EFFECT_TRI_ATTACK,         80, NORMAL,       PHYSICAL,              100, 10,  20
 	move SUPER_FANG,   EFFECT_SUPER_FANG,          1, NORMAL,       PHYSICAL,               90, 10,   0
 	move SLASH,        EFFECT_NORMAL_HIT,         70, NORMAL,       PHYSICAL,              100, 20,   0
-	move SUBSTITUTE,   EFFECT_SUBSTITUTE,          0, NORMAL,       STATUS,             100, 10,   0
+	move BREAKING_SWIPE,EFFECT_ATTACK_DOWN_HIT,   60, DRAGON,       PHYSICAL,             100, 15,   100
 	move STRUGGLE,     EFFECT_RECOIL_HIT,         50, NORMAL,       PHYSICAL,              100,  1,   0
 	move SKETCH,       EFFECT_SKETCH,              0, NORMAL,       STATUS,             100,  1,   0
 	move VACUUM_WAVE,  EFFECT_PRIORITY_HIT,       40, FIGHTING,     SPECIAL,               100, 30,   0
@@ -204,7 +204,7 @@ Moves:
 	move MUD_SLAP,     EFFECT_ACCURACY_DOWN_HIT,  20, GROUND,       SPECIAL,               100, 10, 100
 	move OCTAZOOKA,    EFFECT_ACCURACY_DOWN_HIT,  65, WATER,        SPECIAL,                85, 10,  50
 	move SPIKES,       EFFECT_SPIKES,              0, GROUND,       STATUS,             100, 20,   0
-	move ZAP_CANNON,   EFFECT_PARALYZE_HIT,      100, ELECTRIC,     PHYSICAL,               50,  5, 100
+	move LEAF_BLADE,   EFFECT_NORMAL_HIT,        100, GRASS,        PHYSICAL,           100,  15,  0
 	move FORESIGHT,    EFFECT_FORESIGHT,           0, NORMAL,       STATUS,             100, 40,   0
 	move DESTINY_BOND, EFFECT_DESTINY_BOND,        0, GHOST,        STATUS,             100,  5,   0
 	move PERISH_SONG,  EFFECT_PERISH_SONG,         0, NORMAL,       STATUS,             100,  5,   0

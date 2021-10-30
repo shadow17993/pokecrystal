@@ -1108,7 +1108,7 @@ MagnemiteEvosAttacks:
 	db 27, LOCK_ON
 	db 33, SWIFT
 	db 39, SCREECH
-	db 45, ZAP_CANNON
+	db 45, LEAF_BLADE
 	db 0 ; no more level-up moves
 
 MagnetonEvosAttacks:
@@ -1124,7 +1124,7 @@ MagnetonEvosAttacks:
 	db 27, LOCK_ON
 	db 35, TRI_ATTACK
 	db 43, SCREECH
-	db 53, ZAP_CANNON
+	db 53, LEAF_BLADE
 	db 0 ; no more level-up moves
 
 FarfetchDEvosAttacks:
@@ -1547,7 +1547,7 @@ ChanseyEvosAttacks:
 	db 1, POUND
 	db 5, GROWL
 	db 9, TAIL_WHIP
-	db 13, SOFTBOILED
+	db 13, RECOVER
 	db 17, DOUBLESLAP
 	db 23, MINIMIZE
 	db 29, SING
@@ -1667,7 +1667,7 @@ MrMimeEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, BARRIER
 	db 6, CONFUSION
-	db 11, SUBSTITUTE
+	db 11, BREAKING_SWIPE
 	db 16, MEDITATE
 	db 21, DOUBLESLAP
 	db 26, LIGHT_SCREEN
@@ -1874,7 +1874,7 @@ PorygonEvosAttacks:
 	db 24, SHARPEN
 	db 32, LOCK_ON
 	db 36, TRI_ATTACK
-	db 44, ZAP_CANNON
+	db 44, LEAF_BLADE
 	db 0 ; no more level-up moves
 
 OmanyteEvosAttacks:
@@ -3134,7 +3134,7 @@ Porygon2EvosAttacks:
 	db 24, DEFENSE_CURL
 	db 32, LOCK_ON
 	db 36, TRI_ATTACK
-	db 44, ZAP_CANNON
+	db 44, LEAF_BLADE
 	db 0 ; no more level-up moves
 
 StantlerEvosAttacks:
@@ -3243,7 +3243,7 @@ BlisseyEvosAttacks:
 	db 1, POUND
 	db 4, GROWL
 	db 7, TAIL_WHIP
-	db 10, SOFTBOILED
+	db 10, RECOVER
 	db 13, DOUBLESLAP
 	db 18, MINIMIZE
 	db 23, SING
