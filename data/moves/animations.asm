@@ -100,7 +100,7 @@ BattleAnimations::
 	dw BattleAnim_Meditate
 	dw BattleAnim_Agility
 	dw BattleAnim_QuickAttack
-	dw BattleAnim_Rage
+	dw BattleAnim_PowerGem
 	dw BattleAnim_Teleport
 	dw BattleAnim_NightShade
 	dw BattleAnim_Mimic
@@ -141,7 +141,7 @@ BattleAnimations::
 	dw BattleAnim_Glare
 	dw BattleAnim_DreamEater
 	dw BattleAnim_PoisonGas
-	dw BattleAnim_Barrage
+	dw BattleAnim_AquaJet
 	dw BattleAnim_LeechLife
 	dw BattleAnim_LovelyKiss
 	dw BattleAnim_SkyAttack
@@ -2370,7 +2370,7 @@ BattleAnim_PetalDance:
 	anim_wait 16
 	anim_ret
 
-BattleAnim_Barrage:
+BattleAnim_AquaJet:
 	anim_2gfx ANIM_GFX_EGG, ANIM_GFX_EXPLOSION
 	anim_sound 6, 2, SFX_THROW_BALL
 	anim_obj ANIM_OBJ_SLUDGE_BOMB, 64, 92, $10
@@ -2892,23 +2892,32 @@ BattleAnim_SeismicToss:
 	anim_wait 16
 	anim_ret
 
-BattleAnim_Rage:
-	anim_1gfx ANIM_GFX_HIT
-	anim_call BattleAnim_TargetObj_1Row
-	anim_bgeffect ANIM_BG_CYCLE_MON_LIGHT_DARK_REPEATING, $0, BG_EFFECT_USER, $20
-	anim_sound 0, 0, SFX_RAGE
-	anim_wait 72
-	anim_incbgeffect ANIM_BG_CYCLE_MON_LIGHT_DARK_REPEATING
-	anim_call BattleAnim_ShowMon_0
-	anim_sound 0, 1, SFX_MOVE_PUZZLE_PIECE
-	anim_obj ANIM_OBJ_HIT_BIG_YFIX, 120, 72, $0
-	anim_wait 6
-	anim_sound 0, 1, SFX_COMET_PUNCH
+BattleAnim_PowerGem:
+	anim_2gfx ANIM_GFX_ROCKS, ANIM_GFX_HIT
+	anim_sound 0, 0, SFX_SPARK
+	anim_obj ANIM_OBJ_ANCIENTPOWER, 64, 108, $20
+	anim_wait 8
+	anim_sound 0, 0, SFX_SPARK
+	anim_obj ANIM_OBJ_ANCIENTPOWER, 75, 102, $20
+	anim_wait 8
+	anim_sound 0, 0, SFX_SPARK
+	anim_obj ANIM_OBJ_ANCIENTPOWER, 85, 97, $20
+	anim_wait 8
+	anim_sound 0, 0, SFX_SPARK
+	anim_obj ANIM_OBJ_ANCIENTPOWER, 96, 92, $20
+	anim_wait 8
+	anim_sound 0, 1, SFX_SPARK
+	anim_obj ANIM_OBJ_ANCIENTPOWER, 106, 87, $20
+	anim_wait 8
+	anim_sound 0, 1, SFX_SPARK
+	anim_obj ANIM_OBJ_ANCIENTPOWER, 116, 82, $20
+	anim_wait 8
+	anim_sound 0, 1, SFX_SPARK
+	anim_obj ANIM_OBJ_ANCIENTPOWER, 126, 77, $20
+	anim_wait 8
+	anim_sound 0, 1, SFX_SPARK
 	anim_obj ANIM_OBJ_HIT_BIG_YFIX, 136, 56, $0
 	anim_wait 6
-	anim_sound 0, 1, SFX_MEGA_PUNCH
-	anim_obj ANIM_OBJ_HIT_BIG_YFIX, 152, 40, $0
-	anim_wait 16
 	anim_ret
 
 BattleAnim_Agility:

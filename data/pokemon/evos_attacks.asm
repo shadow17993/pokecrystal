@@ -76,7 +76,7 @@ CharmanderEvosAttacks:
 	db 1, GROWL
 	db 7, EMBER
 	db 13, SMOKESCREEN
-	db 19, RAGE
+	db 19, POWER_GEM ; REPLACE
 	db 25, SCARY_FACE
 	db 31, FLAMETHROWER
 	db 37, SLASH
@@ -92,7 +92,7 @@ CharmeleonEvosAttacks:
 	db 1, EMBER
 	db 7, EMBER
 	db 13, SMOKESCREEN
-	db 20, RAGE
+	db 20, POWER_GEM ; REPLACE
 	db 27, SCARY_FACE
 	db 34, FLAMETHROWER
 	db 41, SLASH
@@ -108,7 +108,7 @@ CharizardEvosAttacks:
 	db 1, SMOKESCREEN
 	db 7, EMBER
 	db 13, SMOKESCREEN
-	db 20, RAGE
+	db 20, POWER_GEM ; REPLACE
 	db 27, SCARY_FACE
 	db 34, FLAMETHROWER
 	db 36, WING_ATTACK
@@ -217,7 +217,7 @@ BeedrillEvosAttacks:
 	db 10, FURY_ATTACK
 	db 15, FOCUS_ENERGY
 	db 20, TWINEEDLE
-	db 25, RAGE
+	db 25, POWER_GEM ; REPLACE
 	db 30, PURSUIT
 	db 35, PIN_MISSILE
 	db 40, AGILITY
@@ -765,12 +765,12 @@ PrimeapeEvosAttacks:
 	db 1, SCRATCH
 	db 1, LEER
 	db 1, LOW_KICK
-	db 1, RAGE
+	db 1, POWER_GEM ; REPLACE
 	db 9, LOW_KICK
 	db 15, KARATE_CHOP
 	db 21, FURY_SWIPES
 	db 27, FOCUS_ENERGY
-	db 28, RAGE
+	db 28, POWER_GEM ; REPLACE
 	db 36, SEISMIC_TOSS
 	db 45, CROSS_CHOP
 	db 54, SCREECH
@@ -1147,7 +1147,7 @@ DoduoEvosAttacks:
 	db 9, PURSUIT
 	db 13, FURY_ATTACK
 	db 21, TRI_ATTACK
-	db 25, RAGE
+	db 25, POWER_GEM ; REPLACE
 	db 33, DRILL_PECK
 	db 37, AGILITY
 	db 0 ; no more level-up moves
@@ -1161,7 +1161,7 @@ DodrioEvosAttacks:
 	db 9, PURSUIT
 	db 13, FURY_ATTACK
 	db 21, TRI_ATTACK
-	db 25, RAGE
+	db 25, POWER_GEM ; REPLACE
 	db 38, DRILL_PECK
 	db 47, AGILITY
 	db 0 ; no more level-up moves
@@ -1294,7 +1294,7 @@ OnixEvosAttacks:
 	db 10, BIND
 	db 14, ROCK_THROW
 	db 23, HARDEN
-	db 27, RAGE
+	db 27, POWER_GEM ; REPLACE
 	db 36, SANDSTORM
 	db 40, SLAM
 	db 0 ; no more level-up moves
@@ -1390,7 +1390,7 @@ ElectrodeEvosAttacks:
 ExeggcuteEvosAttacks:
 	db EVOLVE_ITEM, LEAF_STONE, EXEGGUTOR
 	db 0 ; no more evolutions
-	db 1, BARRAGE
+	db 1, AQUA_JET ; REPLACE
 	db 1, HYPNOSIS
 	db 7, REFLECT
 	db 13, LEECH_SEED
@@ -1403,7 +1403,7 @@ ExeggcuteEvosAttacks:
 
 ExeggutorEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, BARRAGE
+	db 1, AQUA_JET ; REPLACE
 	db 1, HYPNOSIS
 	db 1, CONFUSION
 	db 19, STOMP
@@ -1420,7 +1420,7 @@ CuboneEvosAttacks:
 	db 17, LEER
 	db 21, FOCUS_ENERGY
 	db 25, BONEMERANG
-	db 29, RAGE
+	db 29, POWER_GEM ; REPLACE
 	db 33, FALSE_SWIPE
 	db 37, THRASH
 	db 41, BONE_RUSH
@@ -1438,7 +1438,7 @@ MarowakEvosAttacks:
 	db 17, LEER
 	db 21, FOCUS_ENERGY
 	db 25, BONEMERANG
-	db 32, RAGE
+	db 32, POWER_GEM ; REPLACE
 	db 39, FALSE_SWIPE
 	db 46, THRASH
 	db 53, BONE_RUSH
@@ -1578,7 +1578,7 @@ KangaskhanEvosAttacks:
 	db 13, BITE
 	db 19, TAIL_WHIP
 	db 25, MEGA_PUNCH
-	db 31, RAGE
+	db 31, POWER_GEM ; REPLACE
 	db 37, ENDURE
 	db 43, DIZZY_PUNCH
 	db 49, REVERSAL
@@ -1754,7 +1754,7 @@ TaurosEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 4, TAIL_WHIP
-	db 8, RAGE
+	db 8, POWER_GEM ; REPLACE
 	db 13, HORN_ATTACK
 	db 19, SCARY_FACE
 	db 26, PURSUIT
@@ -2163,7 +2163,7 @@ TotodileEvosAttacks:
 	db 1, FAIRY_WIND
 	db 1, SHEER_COLD
 	db 1, BULLDOZE
-	db 7, RAGE
+	db 7, POWER_GEM ; REPLACE
 	db 13, WATER_GUN
 	db 20, BITE
 	db 27, SCARY_FACE
@@ -2177,8 +2177,8 @@ CroconawEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SCRATCH
 	db 1, LEER
-	db 1, RAGE
-	db 7, RAGE
+	db 1, POWER_GEM ; REPLACE
+	db 7, POWER_GEM ; REPLACE
 	db 13, WATER_GUN
 	db 21, BITE
 	db 28, SCARY_FACE
@@ -2191,9 +2191,9 @@ FeraligatrEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SCRATCH
 	db 1, LEER
-	db 1, RAGE
+	db 1, POWER_GEM ; REPLACE
 	db 1, WATER_GUN
-	db 7, RAGE
+	db 7, POWER_GEM ; REPLACE
 	db 13, WATER_GUN
 	db 21, BITE
 	db 28, SCARY_FACE
@@ -2783,7 +2783,7 @@ ForretressEvosAttacks:
 
 DunsparceEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, RAGE
+	db 1, POWER_GEM ; REPLACE
 	db 5, DEFENSE_CURL
 	db 13, GLARE
 	db 18, SPITE
@@ -2811,7 +2811,7 @@ SteelixEvosAttacks:
 	db 10, BIND
 	db 14, ROCK_THROW
 	db 23, HARDEN
-	db 27, RAGE
+	db 27, POWER_GEM ; REPLACE
 	db 36, SANDSTORM
 	db 40, SLAM
 	db 49, CRUNCH
@@ -2827,7 +2827,7 @@ SnubbullEvosAttacks:
 	db 13, BITE
 	db 19, LICK
 	db 26, ROAR
-	db 34, RAGE
+	db 34, POWER_GEM ; REPLACE
 	db 38, PLAY_ROUGH
 	db 43, TAKE_DOWN
 	db 0 ; no more level-up moves
@@ -2841,7 +2841,7 @@ GranbullEvosAttacks:
 	db 13, BITE
 	db 19, LICK
 	db 28, ROAR
-	db 38, RAGE
+	db 38, POWER_GEM ; REPLACE
 	db 43, PLAY_ROUGH
 	db 51, TAKE_DOWN
 	db 0 ; no more level-up moves

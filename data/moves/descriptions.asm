@@ -99,7 +99,7 @@ MoveDescriptions::
 	dw MeditateDescription
 	dw AgilityDescription
 	dw QuickAttackDescription
-	dw RageDescription
+	dw PowerGemDescription
 	dw TeleportDescription
 	dw NightShadeDescription
 	dw MimicDescription
@@ -140,7 +140,7 @@ MoveDescriptions::
 	dw GlareDescription
 	dw DreamEaterDescription
 	dw PoisonGasDescription
-	dw BarrageDescription
+	dw AquaJetDescription
 	dw LeechLifeDescription
 	dw LovelyKissDescription
 	dw SkyAttackDescription
@@ -656,9 +656,9 @@ QuickAttackDescription:
 	db   "Lets the user get"
 	next "in the first hit.@"
 
-RageDescription:
-	db   "Raises ATTACK if"
-	next "the user is hit.@"
+PowerGemDescription:
+	db   "Attacks with ray"
+	next "of light.@"
 
 TeleportDescription:
 	db   "A move for fleeing"
@@ -820,9 +820,9 @@ PoisonGasDescription:
 	db   "A move that may"
 	next "poison the foe.@"
 
-BarrageDescription:
-	db   "Throws orbs to hit"
-	next "2-5 times.@"
+AquaJetDescription:
+	db   "Lets the user get"
+	next "in the first hit.@"
 
 LeechLifeDescription:
 	db   "Steals 1/2 of the"

@@ -104,7 +104,7 @@
 	const MEDITATE     ; 60
 	const AGILITY      ; 61
 	const QUICK_ATTACK ; 62
-	const RAGE         ; 63
+	const POWER_GEM    ; 63
 	const TELEPORT     ; 64
 	const NIGHT_SHADE  ; 65
 	const MIMIC        ; 66
@@ -145,7 +145,7 @@
 	const GLARE        ; 89
 	const DREAM_EATER  ; 8a
 	const POISON_GAS   ; 8b
-	const BARRAGE      ; 8c
+	const AQUA_JET     ; 8c
 	const LEECH_LIFE   ; 8d
 	const LOVELY_KISS  ; 8e
 	const SKY_ATTACK   ; 8f

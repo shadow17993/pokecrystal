@@ -651,13 +651,13 @@ This bug prevents Substitute from being raised if Beat Up was blocked by Protect
 
 This bug is caused because Beat Up never sets `wAttackMissed`, even when no Pokémon was able to attack (due to being fainted or having a status condition).
 
-**Fix:** Edit `BattleCommand_BeatUpFailText` in [engine/battle/move_effects/beat_up.asm](https://github.com/pret/pokecrystal/blob/master/engine/battle/move_effects/beat_up.asm):
+**Fix:** Edit `BattleCommand_StruggleBugFailText` in [engine/battle/move_effects/beat_up.asm](https://github.com/pret/pokecrystal/blob/master/engine/battle/move_effects/beat_up.asm):
 
 ```diff
- BattleCommand_BeatUpFailText:
+ BattleCommand_StruggleBugFailText:
  ; beatupfailtext
 
- 	ld a, [wBeatUpHitAtLeastOnce]
+ 	ld a, [wStruggleBugHitAtLeastOnce]
  	and a
  	ret nz
 +

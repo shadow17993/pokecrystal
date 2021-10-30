@@ -111,7 +111,7 @@ Moves:
 	move MEDITATE,     EFFECT_ATTACK_UP,           0, PSYCHIC_TYPE, STATUS,             100, 40,   0
 	move AGILITY,      EFFECT_SPEED_UP_2,          0, PSYCHIC_TYPE, STATUS,             100, 30,   0
 	move QUICK_ATTACK, EFFECT_PRIORITY_HIT,       40, NORMAL,       PHYSICAL,             100, 30,   0
-	move RAGE,         EFFECT_RAGE,               20, NORMAL,       PHYSICAL,             100, 20,   0
+	move POWER_GEM,    EFFECT_NORMAL_HIT,         80, ROCK,         SPECIAL,             100, 20,   0
 	move TELEPORT,     EFFECT_TELEPORT,            0, PSYCHIC_TYPE, STATUS,             100, 20,   0
 	move NIGHT_SHADE,  EFFECT_LEVEL_DAMAGE,        1, GHOST,        SPECIAL,                  100, 15,   0
 	move MIMIC,        EFFECT_MIMIC,               0, NORMAL,       STATUS,             100, 10,   0
@@ -152,7 +152,7 @@ Moves:
 	move GLARE,        EFFECT_PARALYZE,            0, NORMAL,       STATUS,              75, 30,   0
 	move DREAM_EATER,  EFFECT_DREAM_EATER,       100, PSYCHIC_TYPE, SPECIAL,               100, 15,   0
 	move POISON_GAS,   EFFECT_POISON,              0, POISON,       STATUS,              55, 40,   0
-	move BARRAGE,      EFFECT_MULTI_HIT,          15, NORMAL,       PHYSICAL,              85, 20,   0
+	move AQUA_JET,     EFFECT_PRIORITY_HIT,       40, WATER,        PHYSICAL,             100, 20,   0
 	move LEECH_LIFE,   EFFECT_LEECH_HIT,          20, BUG,          PHYSICAL,             100, 15,   0
 	move LOVELY_KISS,  EFFECT_SLEEP,               0, NORMAL,       STATUS,               75, 10,   0
 	move SKY_ATTACK,   EFFECT_SKY_ATTACK,        140, FLYING,       PHYSICAL,              90,  5,   0

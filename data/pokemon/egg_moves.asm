@@ -637,7 +637,7 @@ DunsparceEggMoves:
 	db ANCIENTPOWER
 	db ROCK_SLIDE
 	db BITE
-	db RAGE
+	db POWER_GEM ; REPLACE
 	db -1 ; end
 
 GligarEggMoves:
@@ -745,7 +745,7 @@ SkarmoryEggMoves:
 
 HoundourEggMoves:
 	db FIRE_SPIN
-	db RAGE
+	db POWER_GEM ; REPLACE
 	db PURSUIT
 	db COUNTER
 	db SPITE
