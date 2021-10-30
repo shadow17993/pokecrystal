@@ -203,7 +203,7 @@
 	const PERISH_SONG  ; c3
 	const ICY_WIND     ; c4
 	const FLARE_BLITZ       ; c5
-	const BONE_RUSH    ; c6
+	const EARTH_POWER    ; c6
 	const LOCK_ON      ; c7
 	const OUTRAGE      ; c8
 	const SANDSTORM    ; c9

@@ -210,7 +210,7 @@ Moves:
 	move PERISH_SONG,  EFFECT_PERISH_SONG,         0, NORMAL,       STATUS,             100,  5,   0
 	move ICY_WIND,     EFFECT_SPEED_DOWN_HIT,     55, ICE,          SPECIAL,                95, 15, 100
 	move FLARE_BLITZ,  EFFECT_RECOIL_HIT,        120, FIRE,         PHYSICAL,             100,  15,   0
-	move BONE_RUSH,    EFFECT_MULTI_HIT,          25, GROUND,       PHYSICAL,               80, 10,   0
+	move EARTH_POWER,    EFFECT_MULTI_HIT,          25, GROUND,       PHYSICAL,               80, 10,   0
 	move LOCK_ON,      EFFECT_LOCK_ON,             0, NORMAL,       STATUS,             100,  5,   0
 	move OUTRAGE,      EFFECT_RAMPAGE,            90, DRAGON,       PHYSICAL,              100, 15,   0
 	move SANDSTORM,    EFFECT_SANDSTORM,           0, ROCK,         STATUS,             100, 10,   0

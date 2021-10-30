@@ -198,7 +198,7 @@ MoveDescriptions::
 	dw PerishSongDescription
 	dw IcyWindDescription
 	dw FlareBlitzDescription
-	dw BoneRushDescription
+	dw EarthPowerDescription
 	dw LockOnDescription
 	dw OutrageDescription
 	dw SandstormDescription
@@ -1052,7 +1052,7 @@ FlareBlitzDescription:
 	db   "A tackle that also"
 	next "hurts the user.@"
 
-BoneRushDescription:
+EarthPowerDescription:
 	db   "An attack that"
 	next "hits 2-5 times.@"
 
