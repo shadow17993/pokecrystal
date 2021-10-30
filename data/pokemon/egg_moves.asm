@@ -17,7 +17,7 @@ BulbasaurEggMoves:
 	db LIGHT_SCREEN
 	db SKULL_BASH
 	db SAFEGUARD
-	db HEX
+	db HEX ; REPLACE
 	db PETAL_DANCE
 	db -1 ; end
 
@@ -390,7 +390,7 @@ ScytherEggMoves:
 	db COUNTER
 	db SAFEGUARD
 	db BATON_PASS
-	db HEX
+	db HEX ; REPLACE
 	db REVERSAL
 	db LIGHT_SCREEN
 	db -1 ; end
@@ -466,7 +466,7 @@ TotodileEggMoves:
 	db THRASH
 	db HYDRO_PUMP
 	db ANCIENTPOWER
-	db HEX
+	db HEX ; REPLACE
 	db ROCK_SLIDE
 	db -1 ; end
 
@@ -643,7 +643,7 @@ DunsparceEggMoves:
 GligarEggMoves:
 	db METAL_CLAW
 	db WING_ATTACK
-	db HEX
+	db HEX ; REPLACE
 	db COUNTER
 	db -1 ; end
 
