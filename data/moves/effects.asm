@@ -1397,7 +1397,7 @@ HealBell:
 	healbell
 	endmove
 
-TripleKick:
+VacuumWave:
 	checkobedience
 	usedmovetext
 	doturn
@@ -1694,7 +1694,7 @@ SacredFire:
 	burntarget
 	endmove
 
-Magnitude:
+Bulldoze:
 	checkobedience
 	usedmovetext
 	doturn
@@ -2036,7 +2036,7 @@ Teleport:
 	teleport
 	endmove
 
-BeatUp:
+StruggleBug:
 	checkobedience
 	usedmovetext
 	movedelay

@@ -1,10 +1,10 @@
-BattleCommand_GetMagnitude:
+BattleCommand_GetBulldoze:
 ; getmagnitude
 
 	push bc
 	call BattleRandom
 	ld b, a
-	ld hl, MagnitudePower
+	ld hl, BulldozePower
 .loop
 	ld a, [hli]
 	cp b
@@ -20,7 +20,7 @@ BattleCommand_GetMagnitude:
 	ld a, [hl]
 	ld [wTextDecimalByte], a
 	call BattleCommand_MoveDelay
-	ld hl, MagnitudeText
+	ld hl, BulldozeText
 	call StdBattleTextbox
 	pop de
 	pop bc

@@ -1,4 +1,4 @@
-MagnitudePower:
+BulldozePower:
 	; chance, power, magnitude #
 	db   5 percent + 1,  10,  4 ; 5%
 	db  15 percent,      30,  5 ; 10%

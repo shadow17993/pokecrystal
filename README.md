@@ -1,3 +1,11 @@
+# Changes
+- Physical/Special Split
+- Added Fairy Type
+- Added 3 Fairy type moves: Fairy Wind, Moonblast and Play Rough
+- Added EVs
+- Added Instant Text
+- Added Running Shoes
+
 # Pokémon Crystal [![Build Status][ci-badge]][ci]
 
 This is a disassembly of Pokémon Crystal.

@@ -82,7 +82,7 @@ BattleCommandPointers:
 	dw BattleCommand_FalseSwipe
 	dw BattleCommand_HealBell
 	dw BattleCommand_HeldFlinch
-	dw BattleCommand_TripleKick
+	dw BattleCommand_VacuumWave
 	dw BattleCommand_KickCounter
 	dw BattleCommand_Thief
 	dw BattleCommand_ArenaTrap
@@ -106,7 +106,7 @@ BattleCommandPointers:
 	dw BattleCommand_FrustrationPower
 	dw BattleCommand_Safeguard
 	dw BattleCommand_CheckSafeguard
-	dw BattleCommand_GetMagnitude
+	dw BattleCommand_GetBulldoze
 	dw BattleCommand_BatonPass
 	dw BattleCommand_Pursuit
 	dw BattleCommand_ClearHazards
@@ -165,14 +165,14 @@ BattleCommandPointers:
 	dw BattleCommand_SkipSunCharge
 	dw BattleCommand_ThunderAccuracy
 	dw BattleCommand_Teleport
-	dw BattleCommand_BeatUp
+	dw BattleCommand_StruggleBug
 	dw BattleCommand_RageDamage
 	dw BattleCommand_ResetTypeMatchup
 	dw BattleCommand_AllStatsUp
 	dw BattleCommand_BideFailText
 	dw BattleCommand_RaiseSubNoAnim
 	dw BattleCommand_LowerSubNoAnim
-	dw BattleCommand_BeatUpFailText
+	dw BattleCommand_StruggleBugFailText
 	dw BattleCommand_ClearMissDamage
 	dw BattleCommand_MoveDelay
 	dw BattleCommand_MoveAnim

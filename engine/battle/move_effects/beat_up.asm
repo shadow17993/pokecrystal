@@ -1,4 +1,4 @@
-BattleCommand_BeatUp:
+BattleCommand_StruggleBug:
 ; beatup
 
 	call ResetDamage
@@ -14,8 +14,8 @@ BattleCommand_BeatUp:
 	call DelayFrames
 	xor a
 	ld [wPlayerRolloutCount], a
-	ld [wCurBeatUpPartyMon], a
-	ld [wBeatUpHitAtLeastOnce], a
+	ld [wCurStruggleBugPartyMon], a
+	ld [wStruggleBugHitAtLeastOnce], a
 	jr .got_mon
 
 .next_mon
@@ -23,10 +23,10 @@ BattleCommand_BeatUp:
 	ld b, a
 	ld a, [wPartyCount]
 	sub b
-	ld [wCurBeatUpPartyMon], a
+	ld [wCurStruggleBugPartyMon], a
 
 .got_mon
-	ld a, [wCurBeatUpPartyMon]
+	ld a, [wCurStruggleBugPartyMon]
 	ld hl, wPartyMonNicknames
 	call GetNickname
 	ld a, MON_HP
@@ -34,7 +34,7 @@ BattleCommand_BeatUp:
 	ld a, [hli]
 	or [hl]
 	jp z, .beatup_fail ; fainted
-	ld a, [wCurBeatUpPartyMon]
+	ld a, [wCurStruggleBugPartyMon]
 	ld c, a
 	ld a, [wCurBattleMon]
 	; BUG: this can desynchronize link battles
@@ -50,8 +50,8 @@ BattleCommand_BeatUp:
 	jp nz, .beatup_fail
 
 	ld a, $1
-	ld [wBeatUpHitAtLeastOnce], a
-	ld hl, BeatUpAttackText
+	ld [wStruggleBugHitAtLeastOnce], a
+	ld hl, StruggleBugAttackText
 	call StdBattleTextbox
 
 	ld a, [wEnemyMonSpecies]
@@ -88,8 +88,8 @@ BattleCommand_BeatUp:
 
 	xor a
 	ld [wEnemyRolloutCount], a
-	ld [wCurBeatUpPartyMon], a
-	ld [wBeatUpHitAtLeastOnce], a
+	ld [wCurStruggleBugPartyMon], a
+	ld [wStruggleBugHitAtLeastOnce], a
 	jr .enemy_got_mon
 
 .enemy_next_mon
@@ -97,7 +97,7 @@ BattleCommand_BeatUp:
 	ld b, a
 	ld a, [wOTPartyCount]
 	sub b
-	ld [wCurBeatUpPartyMon], a
+	ld [wCurStruggleBugPartyMon], a
 
 .enemy_got_mon
 	ld a, [wBattleMode]
@@ -112,7 +112,7 @@ BattleCommand_BeatUp:
 	and a
 	jr nz, .link_or_tower
 
-	ld a, [wCurBeatUpPartyMon]
+	ld a, [wCurStruggleBugPartyMon]
 	ld c, a
 	ld b, 0
 	ld hl, wOTPartySpecies
@@ -123,7 +123,7 @@ BattleCommand_BeatUp:
 	jr .got_enemy_nick
 
 .link_or_tower
-	ld a, [wCurBeatUpPartyMon]
+	ld a, [wCurStruggleBugPartyMon]
 	ld hl, wOTPartyMonNicknames
 	ld bc, NAME_LENGTH
 	call AddNTimes
@@ -137,7 +137,7 @@ BattleCommand_BeatUp:
 	or [hl]
 	jp z, .beatup_fail
 
-	ld a, [wCurBeatUpPartyMon]
+	ld a, [wCurStruggleBugPartyMon]
 	ld b, a
 	ld a, [wCurOTMon]
 	cp b
@@ -151,19 +151,19 @@ BattleCommand_BeatUp:
 	jr nz, .beatup_fail
 
 	ld a, $1
-	ld [wBeatUpHitAtLeastOnce], a
+	ld [wStruggleBugHitAtLeastOnce], a
 	jr .finish_beatup
 
 .wild
 	ld a, [wEnemyMonSpecies]
 	ld [wNamedObjectIndex], a
 	call GetPokemonName
-	ld hl, BeatUpAttackText
+	ld hl, StruggleBugAttackText
 	call StdBattleTextbox
 	jp EnemyAttackDamage
 
 .finish_beatup
-	ld hl, BeatUpAttackText
+	ld hl, StruggleBugAttackText
 	call StdBattleTextbox
 
 	ld a, [wBattleMonSpecies]
@@ -197,10 +197,10 @@ BattleCommand_BeatUp:
 	ld b, buildopponentrage_command
 	jp SkipToBattleCommand
 
-BattleCommand_BeatUpFailText:
+BattleCommand_StruggleBugFailText:
 ; beatupfailtext
 
-	ld a, [wBeatUpHitAtLeastOnce]
+	ld a, [wStruggleBugHitAtLeastOnce]
 	and a
 	ret nz
 
@@ -217,7 +217,7 @@ GetBeatupMonLocation:
 	ld hl, wOTPartyMon1Species
 
 .got_species
-	ld a, [wCurBeatUpPartyMon]
+	ld a, [wCurStruggleBugPartyMon]
 	add hl, bc
 	call GetPartyLocation
 	pop bc

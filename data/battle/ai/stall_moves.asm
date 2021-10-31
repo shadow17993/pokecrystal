@@ -3,7 +3,7 @@
 
 StallMoves:
 	db SWORDS_DANCE
-	db TAIL_WHIP
+	;db TAIL_WHIP
 	db LEER
 	db GROWL
 	db DISABLE
@@ -14,7 +14,7 @@ StallMoves:
 	db STRING_SHOT
 	db MEDITATE
 	db AGILITY
-	db RAGE
+	db POWER_GEM
 	db MIMIC
 	db SCREECH
 	db HARDEN
@@ -32,6 +32,5 @@ StallMoves:
 	db ACID_ARMOR
 	db SHARPEN
 	db CONVERSION
-	db SUBSTITUTE
 	db FLAME_WHEEL
 	db -1 ; end

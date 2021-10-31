@@ -217,14 +217,14 @@ ENDM
 
 ; see data/moves/tmhm_moves.asm for moves
 TM01 EQU const_value
-	add_tm DYNAMICPUNCH ; bf
+	add_tm ICICLE_CRASH ; REPLACE ; bf
 	add_tm HEADBUTT     ; c0
 	add_tm CURSE        ; c1
 	add_tm ROLLOUT      ; c2
 	const ITEM_C3       ; c3
 	add_tm ROAR         ; c4
 	add_tm TOXIC        ; c5
-	add_tm ZAP_CANNON   ; c6
+	add_tm LEAF_BLADE   ; c6
 	add_tm ROCK_SMASH   ; c7
 	add_tm PSYCH_UP     ; c8
 	add_tm HIDDEN_POWER ; c9
@@ -261,7 +261,7 @@ TM01 EQU const_value
 	add_tm DEFENSE_CURL ; e8
 	add_tm THUNDERPUNCH ; e9
 	add_tm DREAM_EATER  ; ea
-	add_tm DETECT       ; eb
+	add_tm FLARE_BLITZ       ; eb
 	add_tm REST         ; ec
 	add_tm ATTRACT      ; ed
 	add_tm THIEF        ; ee

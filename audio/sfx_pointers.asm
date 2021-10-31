@@ -178,7 +178,7 @@ SFX:
 	dba Sfx_BallBounce
 	dba Sfx_Moonlight
 	dba Sfx_Encore
-	dba Sfx_BeatUp
+	dba Sfx_StruggleBug
 	dba Sfx_BatonPass
 	dba Sfx_BallWobble
 	dba Sfx_SweetScent

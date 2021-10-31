@@ -2808,11 +2808,11 @@ Sfx_Encore_Ch8:
 	noise_note 48, 7, 6, 54
 	sound_ret
 
-Sfx_BeatUp:
+Sfx_StruggleBug:
 	channel_count 1
-	channel 8, Sfx_BeatUp_Ch8
+	channel 8, Sfx_StruggleBug_Ch8
 
-Sfx_BeatUp_Ch8:
+Sfx_StruggleBug_Ch8:
 	noise_note 2, 14, 8, 105
 	noise_note 6, 13, 8, 36
 	noise_note 2, 14, 8, 108

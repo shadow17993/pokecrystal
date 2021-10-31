@@ -7,7 +7,7 @@ JackTriviaScript:
 	ifequal  4, .Gust
 	ifequal  5, .Twister
 	ifequal  6, .Earthquake
-	ifequal  7, .Magnitude
+	ifequal  7, .Bulldoze
 	ifequal  8, .Sandstorm
 	ifequal  9, .SunnyDay
 	ifequal 10, .RainDance
@@ -47,8 +47,8 @@ JackTriviaScript:
 	promptbutton
 	sjump PhoneScript_HangUpText_Male
 
-.Magnitude:
-	farwritetext JackMagnitudeTriviaText
+.Bulldoze:
+	farwritetext JackBulldozeTriviaText
 	promptbutton
 	sjump PhoneScript_HangUpText_Male
 
