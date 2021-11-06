@@ -169,7 +169,7 @@
 	const TRI_ATTACK   ; a1
 	const SUPER_FANG   ; a2
 	const SLASH        ; a3
-	const BREAKING_SWIPE   ; a4
+	const BREAKING_SWIPE ; a4
 	const STRUGGLE     ; a5
 	const SKETCH       ; a6
 	const VACUUM_WAVE  ; a7
@@ -202,8 +202,8 @@
 	const DESTINY_BOND ; c2
 	const PERISH_SONG  ; c3
 	const ICY_WIND     ; c4
-	const FLARE_BLITZ       ; c5
-	const EARTH_POWER    ; c6
+	const FLARE_BLITZ  ; c5
+	const EARTH_POWER  ; c6
 	const LOCK_ON      ; c7
 	const OUTRAGE      ; c8
 	const SANDSTORM    ; c9

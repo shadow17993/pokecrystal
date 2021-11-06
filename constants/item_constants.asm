@@ -217,7 +217,7 @@ ENDM
 
 ; see data/moves/tmhm_moves.asm for moves
 TM01 EQU const_value
-	add_tm ICICLE_CRASH ; REPLACE ; bf
+	add_tm ICICLE_CRASH ; bf
 	add_tm HEADBUTT     ; c0
 	add_tm CURSE        ; c1
 	add_tm ROLLOUT      ; c2
@@ -261,7 +261,7 @@ TM01 EQU const_value
 	add_tm DEFENSE_CURL ; e8
 	add_tm THUNDERPUNCH ; e9
 	add_tm DREAM_EATER  ; ea
-	add_tm FLARE_BLITZ       ; eb
+	add_tm FLARE_BLITZ  ; eb
 	add_tm REST         ; ec
 	add_tm ATTRACT      ; ed
 	add_tm THIEF        ; ee
@@ -269,6 +269,8 @@ TM01 EQU const_value
 	add_tm FIRE_PUNCH   ; f0
 	add_tm FURY_CUTTER  ; f1
 	add_tm NIGHTMARE    ; f2
+	add_tm SUBMISSION	; f3
+	add_tm ECHOED_VOICE ; f4
 NUM_TMS EQU __tmhm_value__ - 1
 
 add_hm: MACRO

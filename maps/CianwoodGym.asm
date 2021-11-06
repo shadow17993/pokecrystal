@@ -50,7 +50,7 @@ CianwoodGymChuckScript:
 	readvar VAR_BADGES
 	scall CianwoodGymActivateRockets
 .FightDone:
-	checkevent EVENT_GOT_TM01_ICICLE_CRASH ; REPLACE
+	checkevent EVENT_GOT_TM51_SUBMISSION
 	iftrue .AlreadyGotTM
 	setevent EVENT_BEAT_BLACKBELT_YOSHI
 	setevent EVENT_BEAT_BLACKBELT_LAO
@@ -58,9 +58,9 @@ CianwoodGymChuckScript:
 	setevent EVENT_BEAT_BLACKBELT_LUNG
 	writetext ChuckExplainBadgeText
 	promptbutton
-	verbosegiveitem TM_ICICLE_CRASH ; REPLACE
+	verbosegiveitem TM_SUBMISSION
 	iffalse .BagFull
-	setevent EVENT_GOT_TM01_ICICLE_CRASH ; REPLACE
+	setevent EVENT_GOT_TM51_SUBMISSION
 	writetext ChuckExplainTMText
 	waitbutton
 	closetext
@@ -216,14 +216,12 @@ ChuckExplainBadgeText:
 	done
 
 ChuckExplainTMText:
-	text "That is DYNAMIC-"
-	line "PUNCH."
+	text "That is"
+	line "SUBMISSION."
 
-	para "It doesn't always"
-	line "hit, but when it"
-
-	para "does, it causes"
-	line "confusion!"
+	para "It hits hard,"
+	line "but deals damage"
+	cont "to the user!"
 	done
 
 ChuckAfterText:

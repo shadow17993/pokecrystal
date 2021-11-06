@@ -30,7 +30,7 @@ VioletGymFalknerScript:
 	readvar VAR_BADGES
 	scall VioletGymActivateRockets
 .FightDone:
-	checkevent EVENT_GOT_TM31_MUD_SLAP
+	checkevent EVENT_GOT_TM52_ECHOED_VOICE
 	iftrue .SpeechAfterTM
 	setevent EVENT_BEAT_BIRD_KEEPER_ROD
 	setevent EVENT_BEAT_BIRD_KEEPER_ABE
@@ -38,10 +38,10 @@ VioletGymFalknerScript:
 	specialphonecall SPECIALCALL_ASSISTANT
 	writetext FalknerZephyrBadgeText
 	promptbutton
-	verbosegiveitem TM_MUD_SLAP
+	verbosegiveitem TM_ECHOED_VOICE
 	iffalse .NoRoomForMudSlap
-	setevent EVENT_GOT_TM31_MUD_SLAP
-	writetext FalknerTMMudSlapText
+	setevent EVENT_GOT_TM52_ECHOED_VOICE
+	writetext FalknerTMEchoedVoiceText
 	waitbutton
 	closetext
 	end
@@ -166,7 +166,7 @@ FalknerZephyrBadgeText:
 	line "too."
 	done
 
-FalknerTMMudSlapText:
+FalknerTMEchoedVoiceText:
 	text "By using a TM, a"
 	line "#MON will"
 
@@ -178,17 +178,11 @@ FalknerTMMudSlapText:
 	cont "used only once."
 
 	para "TM31 contains"
-	line "MUD-SLAP."
+	line "ECHOED VOICE."
 
-	para "It reduces the"
-	line "enemy's accuracy"
-
-	para "while it causes"
-	line "damage."
-
-	para "In other words, it"
-	line "is both defensive"
-	cont "and offensive."
+	para "It causes damage"
+	line "through sound "
+	line "waves."
 	done
 
 FalknerFightDoneText:
