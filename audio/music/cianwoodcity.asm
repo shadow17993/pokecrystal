@@ -1,7 +1,7 @@
 Music_CianwoodCity:
 	channel_count 1
-	channel 1, Music_CianwoodCity_Ch1
-	;channel 2, Music_CianwoodCity_Ch2
+	;channel 1, Music_CianwoodCity_Ch1
+	channel 2, Music_CianwoodCity_Ch2
 	;channel 3, Music_CianwoodCity_Ch3
 
 Music_CianwoodCity_Ch1:
@@ -263,8 +263,8 @@ Music_CianwoodCity_Ch2:
 	note_type 12, 7, 7
 	rest 10
 	note C#, 2
-	note B_, 2
 	octave 4
+	note B_, 2
 	note G_, 2
 	note F#, 4
 	note G#, 4
@@ -278,9 +278,11 @@ Music_CianwoodCity_Ch2:
 	note C_, 1
 	note C#, 11
 	rest 1
+	octave 3
 	note B_, 2
 	rest 2
 	note B_, 16
+	octave 4
 	note E_, 8
 	rest 4
 	note D#, 4
@@ -289,15 +291,15 @@ Music_CianwoodCity_Ch2:
 	note E_, 4
 	note F#, 4
 	note D#, 4
+	octave 3
 	note B_, 2
 	rest 2
 	note B_, 4
-	octave 3
 	note G#, 2
 	note E_, 1
 	note G#, 1
-	octave 4
 	note B_, 16
+	octave 4
 	note D#, 4
 	note F#, 2
 	rest 2
@@ -311,9 +313,11 @@ Music_CianwoodCity_Ch2:
 	octave 5
 	note C_, 1
 	note C#, 11
+	octave 4
 	note B_, 2
 	rest 2
 	note B_, 16
+	octave 5
 	note E_, 12
 	note D#, 4
 	rest 4
@@ -322,23 +326,22 @@ Music_CianwoodCity_Ch2:
 	note F#, 2
 	octave 4
 	note G#, 1
-	octave 5
 	note B_, 1
+	octave 5
 	note D#, 1
 	note G#, 3
 	note D#, 2
 	rest 2
 	note D#, 4
+	octave 4
 	note B_, 2
 	rest 2
 	note B_, 4
-	octave 4
 	note G#, 2
 	rest 2
 	note A#, 4
-	octave 5
-	note B_, 2
 	octave 4
+	note B_, 2
 	note F#, 1
 	note A#, 1
 	octave 5
@@ -355,14 +358,14 @@ Music_CianwoodCity_Ch2:
 	note G#, 16
 	octave 3
 	note G#, 4
-	octave 4
 	note B_, 2
 	rest 2
+	octave 4
 	note D#, 4
 	note C#, 12
+	octave 3
 	note B_, 4
 	rest 4
-	octave 3
 	note A#, 4
 	rest 4
 	octave 4
@@ -372,31 +375,28 @@ Music_CianwoodCity_Ch2:
 	rest 4
 	note D#, 8
 	note C#, 4
+	octave 3
 	note B_, 2
 	rest 2
-	octave 3
 	note A#, 4
-	octave 4
 	note B_, 2
 	rest 6
 	octave 3
 	note A#, 4
 	rest 4
-	octave 4
 	note B_, 4
-	octave 3
 	note G#, 16
 	rest 4
 	octave 4
 	note E_, 4
 	note D#, 4
 	note C#, 4
-	note B_, 12
 	octave 3
+	note B_, 12
 	note A#, 4
 	rest 4
-	octave 4
 	note B_, 4
+	octave 4
 	note C#, 4
 	note D_, 4
 	note_type 12, 8, 3
@@ -439,14 +439,13 @@ Music_CianwoodCity_Ch2:
 	rest 1
 	note A_, 1
 	note A#, 12
-	octave 5
 	note B_, 4
 	octave 4
 	note G#, 8
 	octave 3
 	note G#, 4
-	octave 4
 	note B_, 4
+	octave 4
 	note_type 12, 8, 7
 	note E_, 10
 	note F#, 2
@@ -456,8 +455,8 @@ Music_CianwoodCity_Ch2:
 	rest 2
 	octave 3
 	note A#, 2
-	octave 4
 	note B_, 2
+	octave 4
 	note C#, 2
 	note D#, 16
 	sound_loop 0, .mainloop
