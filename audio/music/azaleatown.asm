@@ -1,10 +1,11 @@
 Music_AzaleaTown:
-	channel_count 4
+	channel_count 1
 	channel 1, Music_AzaleaTown_Ch1
-	channel 2, Music_AzaleaTown_Ch2
-	channel 3, Music_AzaleaTown_Ch3
-	channel 4, Music_AzaleaTown_Ch4
+	;channel 2, Music_AzaleaTown_Ch2
+	;channel 3, Music_AzaleaTown_Ch3
+	;channel 4, Music_AzaleaTown_Ch4
 
+; BASS CHANNEL
 Music_AzaleaTown_Ch1:
 	tempo 160
 	volume 7, 7
@@ -34,9 +35,9 @@ Music_AzaleaTown_Ch1:
 	note G_, 2
 	note A_, 1
 	rest 3
-	octave 4
 	note B_, 4
 	note_type 6, 10, 4
+	octave 4
 	note F#, 1
 	note G_, 3
 	note F_, 4
@@ -47,10 +48,11 @@ Music_AzaleaTown_Ch1:
 	stereo_panning TRUE, FALSE
 	note_type 6, 10, 4
 	note D_, 4
+	octave 3
 	note B_, 4
 	rest 3
 	note A#, 1
-	octave 4
+	;octave 4
 	note B_, 12
 	octave 3
 	note A_, 4
@@ -62,6 +64,7 @@ Music_AzaleaTown_Ch1:
 	octave 4
 	note C_, 2
 	rest 2
+	octave 2
 	note B_, 2
 	rest 2
 	volume_envelope 10, 1
@@ -71,8 +74,9 @@ Music_AzaleaTown_Ch1:
 	rest 14
 	sound_call .sub2
 	volume_envelope 10, 3
-	octave 4
+	octave 3
 	note B_, 1
+	octave 4
 	note C_, 3
 	note E_, 2
 	rest 2
@@ -151,11 +155,13 @@ Music_AzaleaTown_Ch1:
 	volume_envelope 6, 1
 	note G#, 2
 	volume_envelope 10, 1
+	octave 3
 	note B_, 2
 	volume_envelope 6, 1
 	note B_, 2
 	note B_, 2
 	volume_envelope 10, 1
+	octave 4
 	note C_, 2
 	volume_envelope 6, 1
 	note C_, 2
@@ -202,12 +208,12 @@ Music_AzaleaTown_Ch1:
 	volume_envelope 6, 1
 	note C_, 2
 	volume_envelope 10, 1
+	octave 2
 	note B_, 2
 	volume_envelope 6, 1
 	note B_, 2
 	note B_, 2
 	volume_envelope 10, 1
-	octave 2
 	note A_, 2
 	volume_envelope 6, 1
 	note A_, 2
