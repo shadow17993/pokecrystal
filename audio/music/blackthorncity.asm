@@ -1,12 +1,12 @@
-Music_AzaleaTown:
+Music_BlackthornCity:
 	channel_count 4
-	channel 1, Music_AzaleaTown_Ch1
-	channel 2, Music_AzaleaTown_Ch2
-	channel 3, Music_AzaleaTown_Ch3
-	channel 4, Music_AzaleaTown_Ch4
+	channel 1, Music_BlackthornCity_Ch1
+	channel 2, Music_BlackthornCity_Ch2
+	channel 3, Music_BlackthornCity_Ch3
+	channel 4, Music_BlackthornCity_Ch4
 
 ; BASS CHANNEL
-Music_AzaleaTown_Ch1:
+Music_BlackthornCity_Ch1:
 	tempo 160
 	volume 7, 7
 	duty_cycle 2
@@ -236,7 +236,7 @@ Music_AzaleaTown_Ch1:
 	sound_ret
 
 ; MELODY CHANNEL
-Music_AzaleaTown_Ch2:
+Music_BlackthornCity_Ch2:
 	vibrato 18, 2, 3
 	duty_cycle 2
 	stereo_panning TRUE, FALSE
@@ -439,7 +439,7 @@ Music_AzaleaTown_Ch2:
 	volume_envelope 11, 4
 	sound_ret
 
-Music_AzaleaTown_Ch3:
+Music_BlackthornCity_Ch3:
 	stereo_panning TRUE, TRUE
 	vibrato 6, 2, 6
 	note_type 12, 2, 5
@@ -646,7 +646,7 @@ Music_AzaleaTown_Ch3:
 	rest 1
 	sound_ret
 
-Music_AzaleaTown_Ch4:
+Music_BlackthornCity_Ch4:
 	toggle_noise 3
 	drum_speed 12
 	drum_note 6, 2
