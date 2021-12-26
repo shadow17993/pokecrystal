@@ -44,6 +44,8 @@ def main(argv):
     
     path = "./audio/music/" + input + ".asm"
 
+    print(path)
+
     lines = []
 
     r = open(path, "r")

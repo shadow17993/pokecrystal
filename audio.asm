@@ -144,6 +144,7 @@ SECTION "New Songs", ROMX
 
 INCLUDE "audio/music/olivinecity.asm"
 INCLUDE "audio/music/blackthorncity.asm"
+INCLUDE "audio/music/cianwoodcity.asm"
 
 SECTION "Sound Effects", ROMX
 
