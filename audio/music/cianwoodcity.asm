@@ -1,16 +1,16 @@
 Music_CianwoodCity:
-	channel_count 1
-	;channel 1, Music_CianwoodCity_Ch1
+	channel_count 3
+	channel 1, Music_CianwoodCity_Ch1
 	channel 2, Music_CianwoodCity_Ch2
-	;channel 3, Music_CianwoodCity_Ch3
+	channel 3, Music_CianwoodCity_Ch3
 
 Music_CianwoodCity_Ch1:
-	tempo 197
 	volume 7, 7
 	stereo_panning FALSE, TRUE
 	vibrato 18, 2, 5
 	duty_cycle 2
 .mainloop:
+	tempo 230
 	note_type 12, 5, 7
 	rest 10
 	octave 3
@@ -18,6 +18,7 @@ Music_CianwoodCity_Ch1:
 	rest 10
 	note B_, 6
 	rest 16
+	tempo 205
 	note A#, 4
 	note B_, 4
 	octave 4
@@ -466,20 +467,23 @@ Music_CianwoodCity_Ch3:
 .mainloop:
 	vibrato 18, 2, 5
 	note_type 12, 2, 5
-	octave 3
+	octave 2
 	note B_, 2
+	octave 3
 	note F#, 2
 	octave 4
 	note C#, 2
 	note D#, 10
-	octave 3
+	octave 2
 	note B_, 2
+	octave 3
 	note G#, 2
 	octave 4
 	note D#, 2
 	note E_, 10
-	octave 3
+	octave 2
 	note B_, 2
+	octave 3
 	note F#, 2
 	octave 4
 	note C#, 2
@@ -490,7 +494,9 @@ Music_CianwoodCity_Ch3:
 	octave 3
 	note A#, 2
 	note F#, 2
+	octave 2
 	note B_, 2
+	octave 3
 	note F#, 2
 	octave 4
 	note C#, 2
@@ -523,15 +529,17 @@ Music_CianwoodCity_Ch3:
 	note A#, 2
 	note F#, 1
 	note G_, 5
-	octave 3
+	octave 2
 	note B_, 2
+	octave 3
 	note F#, 2
 	octave 4
 	note C#, 2
 	note D#, 2
 	note F#, 2
-	octave 5
+	octave 4
 	note B_, 2
+	octave 5
 	note C#, 2
 	note D#, 2
 	octave 3
@@ -549,9 +557,9 @@ Music_CianwoodCity_Ch3:
 	note E_, 8
 	octave 4
 	note G#, 2
-	octave 5
 	note B_, 1
 	rest 1
+	octave 5
 	note C#, 2
 	note D#, 1
 	rest 1
@@ -567,8 +575,9 @@ Music_CianwoodCity_Ch3:
 	octave 4
 	note C#, 2
 	sound_call .sub1
-	octave 4
+	octave 3
 	note B_, 8
+	octave 4
 	note D#, 8
 	note F#, 8
 	note A#, 8
@@ -578,9 +587,8 @@ Music_CianwoodCity_Ch3:
 	note C_, 8
 	note_type 12, 2, 5
 	sound_call .sub1
-	octave 4
-	note B_, 8
 	octave 3
+	note B_, 8
 	note F#, 8
 	note D#, 8
 	note C#, 8
@@ -594,8 +602,10 @@ Music_CianwoodCity_Ch3:
 	rest 1
 	note E_, 4
 	rest 2
+	octave 2
 	note B_, 1
 	rest 1
+	octave 3
 	note E_, 4
 	rest 2
 	note E_, 1
