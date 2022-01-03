@@ -21,7 +21,6 @@ INCLUDE "audio/music/darkcave.asm"
 INCLUDE "audio/music/johtogymbattle.asm"
 INCLUDE "audio/music/championbattle.asm"
 INCLUDE "audio/music/ssaqua.asm"
-INCLUDE "audio/music/newbarktown.asm"
 INCLUDE "audio/music/goldenrodcity.asm"
 INCLUDE "audio/music/vermilioncity.asm"
 INCLUDE "audio/music/titlescreen.asm"
@@ -142,6 +141,8 @@ INCLUDE "audio/music/postcredits.asm"
 
 SECTION "New Songs", ROMX
 
+INCLUDE "audio/music/newbarktown.asm"
+INCLUDE "audio/music/newbarktown_night.asm"
 INCLUDE "audio/music/olivinecity.asm"
 INCLUDE "audio/music/blackthorncity.asm"
 INCLUDE "audio/music/cianwoodcity.asm"

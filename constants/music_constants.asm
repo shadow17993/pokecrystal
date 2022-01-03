@@ -108,6 +108,7 @@
 	const MUSIC_OLIVINE_CITY                 ; 67
 	const MUSIC_BLACKTHORN_CITY              ; 68
 	const MUSIC_CIANWOOD_CITY                ; 69
+	const MUSIC_NEW_BARK_TOWN_NIGHT          ; 6a
 NUM_MUSIC_SONGS EQU const_value
 
 ; GetMapMusic picks music for this value (see home/map.asm)

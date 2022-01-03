@@ -110,4 +110,5 @@ Music:
 	dba Music_OlivineCity
 	dba Music_BlackthornCity
 	dba Music_CianwoodCity
+	dba Music_NewBarkTownNight
 	assert_table_length NUM_MUSIC_SONGS

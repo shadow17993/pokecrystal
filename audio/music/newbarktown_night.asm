@@ -1,13 +1,13 @@
-Music_NewBarkTown:
+Music_NewBarkTownNight:
 	channel_count 3
-	channel 1, Music_NewBarkTown_Ch1
-	channel 2, Music_NewBarkTown_Ch2
-	channel 3, Music_NewBarkTown_Ch3
+	channel 1, Music_NewBarkTownNight_Ch1
+	channel 2, Music_NewBarkTownNight_Ch2
+	channel 3, Music_NewBarkTownNight_Ch3
 
 	db $3 ; unused, leftover from a channel 4
 
 ; BASS
-Music_NewBarkTown_Ch1:
+Music_NewBarkTownNight_Ch1:
 	tempo 210
 	volume 7, 7
 	stereo_panning FALSE, TRUE
@@ -159,7 +159,7 @@ Music_NewBarkTown_Ch1:
 	note D#, 2
 	sound_ret
 
-Music_NewBarkTown_Ch2:
+Music_NewBarkTownNight_Ch2:
 	stereo_panning TRUE, TRUE
 	vibrato 18, 2, 3
 	note_type 6, 10, 7
@@ -252,7 +252,7 @@ Music_NewBarkTown_Ch2:
 	sound_ret
 
 ; MELODY
-Music_NewBarkTown_Ch3:
+Music_NewBarkTownNight_Ch3:
 	stereo_panning TRUE, FALSE
 	note_type 12, 1, 0
 	octave 5
