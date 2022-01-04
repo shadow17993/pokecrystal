@@ -6,9 +6,9 @@ Music_NewBarkTownNight:
 
 	db $3 ; unused, leftover from a channel 4
 
-; BASS
+; MELODY
 Music_NewBarkTownNight_Ch1:
-	tempo 210
+	tempo 220
 	volume 7, 7
 	stereo_panning FALSE, TRUE
 	vibrato 18, 2, 3
@@ -171,20 +171,20 @@ Music_NewBarkTownNight_Ch2:
 	sound_call .sub1
 	sound_call .sub2
 	volume_envelope 8, 7
-	octave 5
+	octave 4
 	note A#, 6
 	note G#, 6
 	volume_envelope 7, 7
-	octave 6
+	octave 5
 	note C#, 4
 	note C_, 16
 	sound_call .sub2
 	volume_envelope 8, 7
-	octave 5
+	octave 4
 	note A#, 6
 	note G#, 6
 	volume_envelope 7, 7
-	octave 6
+	octave 5
 	note C#, 4
 	note D#, 16
 	sound_loop 0, .mainloop
