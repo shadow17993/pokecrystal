@@ -1,31 +1,33 @@
 import sys, getopt
 
 def returnTransposedNote(line):
+    lines = []
+
     if "A_" in line:
-        return line.replace("A_", "G#")
+        lines.append(line.replace("A_", "G#"))
     if "A#" in line:
-        return line.replace("A#", "A_")
+        lines.append(line.replace("A#", "A_"))
     if "B_" in line:
-        return line.replace("B_", "A#")
+        lines.append(line.replace("B_", "A#"))
     if "C_" in line:
-        return line.replace("C_", "B_")
+        lines.append(line.replace("C_", "B_"))
     if "C#" in line:
-        return line.replace("C#", "C_")
+        lines.append(line.replace("C#", "C_"))
     if "D_" in line:
-        return line.replace("D_", "C#")
+        lines.append(line.replace("D_", "C#"))
     if "D#" in line:
-        return line.replace("D#", "D_")
+        lines.append(line.replace("D#", "D_"))
     if "E_" in line:
-        return line.replace("E_", "D#")
+        lines.append(line.replace("E_", "D#"))
     if "F_" in line:
-        return line.replace("F_", "E_")
+        lines.append(line.replace("F_", "E_"))
     if "F#" in line:
-        return line.replace("F#", "F_")
+        lines.append(line.replace("F#", "F_"))
     if "G_" in line:
-        return line.replace("G_", "F#")
+        lines.append(line.replace("G_", "F#"))
     if "G#" in line:
-        return line.replace("G#", "G_")
-    return line
+        lines.append(line.replace("G#", "G_"))
+    return linea
 
 def main(argv):
     input = ''
@@ -51,6 +53,9 @@ def main(argv):
     r = open(path, "r")
     for x in r:
         print(x)
+        currentOctave = 0
+        if 'octave' in line:
+            currentOctave = line.split(" ")[1]
         lines.append(returnTransposedNote(x))
 
     w = open(path, "w")
