@@ -105,7 +105,7 @@ MoveEffectsPointers:
 	dw FalseSwipe
 	dw HealBell
 	dw NormalHit
-	dw TripleKick
+	dw VacuumWave
 	dw Thief
 	dw MeanLook
 	dw Nightmare
@@ -127,7 +127,7 @@ MoveEffectsPointers:
 	dw Frustration
 	dw Safeguard
 	dw SacredFire
-	dw Magnitude
+	dw Bulldoze
 	dw BatonPass
 	dw Pursuit
 	dw RapidSpin
@@ -155,7 +155,7 @@ MoveEffectsPointers:
 	dw Solarbeam
 	dw Thunder
 	dw Teleport
-	dw BeatUp
+	dw StruggleBug
 	dw Fly
 	dw DefenseCurl
 	assert_table_length NUM_MOVE_EFECTS

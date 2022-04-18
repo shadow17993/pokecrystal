@@ -352,7 +352,7 @@ BattleAnimCommands::
 	dw BattleAnimCmd_OAMOn
 	dw BattleAnimCmd_OAMOff
 	dw BattleAnimCmd_ClearObjs
-	dw BattleAnimCmd_BeatUp
+	dw BattleAnimCmd_StruggleBug
 	dw BattleAnimCmd_E7
 	dw BattleAnimCmd_UpdateActorPic
 	dw BattleAnimCmd_Minimize
@@ -1121,7 +1121,7 @@ BattleAnimCmd_DropSub:
 	ldh [rSVBK], a
 	ret
 
-BattleAnimCmd_BeatUp:
+BattleAnimCmd_StruggleBug:
 	ldh a, [rSVBK]
 	push af
 	ld a, BANK(wCurPartySpecies)

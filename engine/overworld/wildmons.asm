@@ -273,6 +273,7 @@ ChooseWildEncounter:
 	call Random
 	cp 100
 	jr nc, .randomloop
+	ld de, 4
 ; This next loop chooses which mon to load up.
 .prob_bracket_loop
 	sub [hl]
@@ -284,6 +285,7 @@ ChooseWildEncounter:
 	inc hl
 	ld a, [hli]
 	ld b, a
+	
 	call ValidateTempWildMonSpecies
 	jr c, .nowildbattle
 

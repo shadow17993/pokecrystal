@@ -151,7 +151,7 @@ KantoGrassWildMons:
 	db 10, SLOWPOKE,	  21,  21
 	db  5, RATTATA,	  	  20,  20
 	db  4, SLOWPOKE,	  23,  23
-	db  1, SLOWPOKE,	  23,  23
+	db  1, TOTODILE,	  21,  21
 	; day
 	db 30, ZUBAT,	  	  22,  22
 	db 30, RATICATE,	  22,  22
@@ -159,7 +159,7 @@ KantoGrassWildMons:
 	db 10, SLOWPOKE,	  21,  21
 	db  5, RATTATA,	  	  20,  20
 	db  4, SLOWPOKE,	  23,  23
-	db  1, SLOWPOKE,	  23,  23
+	db  1, TOTODILE,	  21,  21
 	; nite
 	db 30, ZUBAT,	  	  22,  22
 	db 30, RATICATE,	  22,  22
@@ -167,7 +167,7 @@ KantoGrassWildMons:
 	db 10, SLOWPOKE,	  21,  21
 	db  5, RATTATA,	  	  20,  20
 	db  4, SLOWPOKE,	  23,  23
-	db  1, SLOWPOKE,	  23,  23
+	db  1, TOTODILE,	  21,  21
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_1
@@ -205,17 +205,17 @@ KantoGrassWildMons:
 	db 30, LEDYBA,	  	  3,  3
 	db 20, PIDGEY,	  	  5,  5
 	db 10, BUTTERFREE,	  7,  7
-	db  5, LEDIAN,	  	  7,  7
-	db  4, PIKACHU,	  	  4,  4
-	db  1, PIKACHU,	  	  4,  4
+	db  5, PIKACHU,	  	  7,  7
+	db  4, LEDIAN,	  	  4,  4
+	db  1, BULBASAUR,	  4,  4
 	; day
 	db 30, CATERPIE,	  3,  3
 	db 30, PIDGEY,	  	  3,  3
 	db 20, PIDGEY,	  	  5,  5
 	db 10, BUTTERFREE,	  7,  7
-	db  5, PIDGEOTTO,	  7,  7
-	db  4, PIKACHU,	  	  4,  4
-	db  1, PIKACHU,	  	  4,  4
+	db  5, PIKACHU,	  	  7,  7
+	db  4, PIDGEOTTO,	  4,  4
+	db  1, BULBASAUR,	  4,  4
 	; nite
 	db 30, HOOTHOOT,	  3,  3
 	db 30, SPINARAK,	  3,  3
@@ -223,7 +223,7 @@ KantoGrassWildMons:
 	db 10, NOCTOWL,	  	  7,  7
 	db  5, ARIADOS,	  	  7,  7
 	db  4, NOCTOWL,	  	  4,  4
-	db  1, NOCTOWL,	  	  4,  4
+	db  1, BULBASAUR,	  4,  4
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_3
@@ -235,7 +235,7 @@ KantoGrassWildMons:
 	db 10, RATICATE,	  10, 10
 	db  5, ARBOK,	  	  10, 10
 	db  4, SANDSHREW,	  10, 10
-	db  1, SANDSHREW,	  10, 10
+	db  1, CHARMANDER,	  10, 10
 	; day
 	db 30, SPEAROW,	  	  5,  5
 	db 30, RATTATA,	  	  5,  5
@@ -243,7 +243,7 @@ KantoGrassWildMons:
 	db 10, RATICATE,	  10, 10
 	db  5, ARBOK,	  	  10, 10
 	db  4, SANDSHREW,	  10, 10
-	db  1, SANDSHREW,	  10, 10
+	db  1, CHARMANDER,	  10, 10
 	; nite
 	db 30, RATTATA,	  	  5,  5
 	db 30, RATTATA,	  	  10, 10
@@ -251,7 +251,7 @@ KantoGrassWildMons:
 	db 10, ZUBAT,	  	  6, 6
 	db  5, RATTATA,	  	  5, 5
 	db  4, CLEFAIRY,	  6, 6
-	db  1, CLEFAIRY,	  6, 6
+	db  1, CHARMANDER,	  6, 6
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_4
@@ -343,7 +343,7 @@ KantoGrassWildMons:
 	; morn
 	db 30, RATTATA,	  	  17, 17
 	db 30, SPEAROW,	  	  17, 17
-	db 20, SNUBBULL,	  18, 18
+	db 20, VULPIX,	  	  18, 18
 	db 10, RATICATE,	  18, 18
 	db  5, JIGGLYPUFF,	  18, 18
 	db  4, ABRA,	  	  16, 16
@@ -351,7 +351,7 @@ KantoGrassWildMons:
 	; day
 	db 30, RATTATA,	  	  17, 17
 	db 30, SPEAROW,	  	  17, 17
-	db 20, SNUBBULL,	  18, 18
+	db 20, VULPIX,	  	  18, 18
 	db 10, RATICATE,	  18, 18
 	db  5, JIGGLYPUFF,	  18, 18
 	db  4, ABRA,	  	  16, 16
@@ -400,7 +400,7 @@ KantoGrassWildMons:
 	db 30, RATTATA,	  	  15, 15
 	db 30, SPEAROW,	  	  15, 15
 	db 20, RATICATE,	  15, 15
-	db 10, FEAROW,	  	  15, 15
+	db 10, MANKEY,	  	  15, 15
 	db  5, FEAROW,	  	  15, 15
 	db  4, MAROWAK,	  	  18, 18
 	db  1, MAROWAK,	  	  18, 18
@@ -408,7 +408,7 @@ KantoGrassWildMons:
 	db 30, RATTATA,	  	  15, 15
 	db 30, SPEAROW,	  	  15, 15
 	db 20, RATICATE,	  15, 15
-	db 10, FEAROW,	  	  15, 15
+	db 10, MANKEY,	  	  15, 15
 	db  5, FEAROW,	  	  15, 15
 	db  4, MAROWAK,	  	  18, 18
 	db  1, MAROWAK,	  	  18, 18
@@ -655,7 +655,7 @@ KantoGrassWildMons:
 	db 10, RATICATE,	  20, 20
 	db  5, MR__MIME,	  30, 30
 	db  4, MR__MIME,	  28, 28
-	db  1, MR__MIME,	  28, 28
+	db  1, SQUIRTLE,	  25, 25
 	; day
 	db 30, TANGELA,	  	  30, 30
 	db 30, RATTATA,	  	  25, 25
@@ -663,7 +663,7 @@ KantoGrassWildMons:
 	db 10, RATICATE,	  20, 20
 	db  5, MR__MIME,	  30, 30
 	db  4, MR__MIME,	  28, 28
-	db  1, MR__MIME,	  28, 28
+	db  1, SQUIRTLE,	  25, 25
 	; nite
 	db 30, TANGELA,	  	  30, 30
 	db 30, RATTATA,	  	  25, 25
@@ -671,7 +671,7 @@ KantoGrassWildMons:
 	db 10, RATICATE,	  20, 20
 	db  5, TANGELA,	  	  30, 30
 	db  4, TANGELA,	  	  28, 28
-	db  1, TANGELA,	  	  28, 28
+	db  1, SQUIRTLE,	  25, 25
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_22

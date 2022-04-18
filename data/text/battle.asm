@@ -1028,8 +1028,8 @@ SafeguardProtectText:
 	cont "SAFEGUARD!"
 	prompt
 
-MagnitudeText:
-	text "Magnitude @"
+BulldozeText:
+	text "Bulldoze @"
 	text_decimal wTextDecimalByte, 1, 1
 	text "!"
 	prompt
@@ -1079,7 +1079,7 @@ ForesawAttackText:
 	line "foresaw an attack!"
 	prompt
 
-BeatUpAttackText:
+StruggleBugAttackText:
 	text_ram wStringBuffer1
 	text "'s"
 	line "attack!"

@@ -125,13 +125,13 @@ JackEarthquakeTriviaText:
 	line "more powerful."
 	done
 
-JackMagnitudeTriviaText:
+JackBulldozeTriviaText:
 	text "Did you know…?"
 
 	para "If your opponent"
 	line "uses DIG, your"
 
-	para "MAGNITUDE becomes"
+	para "EARTHQUAKE becomes"
 	line "more powerful."
 	done
 

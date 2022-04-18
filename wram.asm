@@ -609,7 +609,7 @@ wEnemyFutureSightDamage:: dw
 wPlayerRageCounter:: db
 wEnemyRageCounter:: db
 
-wBeatUpHitAtLeastOnce:: db
+wStruggleBugHitAtLeastOnce:: db
 
 wPlayerTrappingMove:: db
 wEnemyTrappingMove:: db
@@ -2044,7 +2044,7 @@ SECTION UNION "Miscellaneous WRAM 1", WRAMX
 ; miscellaneous
 wTempDayOfWeek::
 wPrevPartyLevel::
-wCurBeatUpPartyMon::
+wCurStruggleBugPartyMon::
 wUnownPuzzleCornerTile::
 wKeepSevenBiasChance::
 wPokeFluteCuredSleep::
@@ -2647,6 +2647,9 @@ wBaseDefense:: db
 wBaseSpeed:: db
 wBaseSpecialAttack:: db
 wBaseSpecialDefense:: db
+wBaseEVs::
+wBaseHPAtkDefSpdEVs:: db
+wBaseSpAtkSpDefEVs:: db
 wBaseType::
 wBaseType1:: db
 wBaseType2:: db
@@ -2656,9 +2659,7 @@ wBaseItems::
 wBaseItem1:: db
 wBaseItem2:: db
 wBaseGender:: db
-wBaseUnknown1:: db
 wBaseEggSteps:: db
-wBaseUnknown2:: db
 wBasePicSize:: db
 wBaseUnusedFrontpic:: dw
 wBaseUnusedBackpic:: dw
