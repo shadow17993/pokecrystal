@@ -581,7 +581,7 @@ JohtoGrassWildMons:
 	db 10, KAKUNA,	  	  7,  7
 	db  5, PIDGEY,	  	  7,  7
 	db  4, PARAS,	  	  6,  6
-	db  1, PARAS,	  	  6,  6
+	db  1, CHIKORITA,	  6,  6
 	; day
 	db 30, CATERPIE,	  5,  5
 	db 30, WEEDLE,	  	  5,  5
@@ -589,7 +589,7 @@ JohtoGrassWildMons:
 	db 10, KAKUNA,	  	  7,  7
 	db  5, PIDGEY,	  	  7,  7
 	db  4, PARAS,	  	  6,  6
-	db  1, PARAS,	  	  6,  6
+	db  1, CHIKORITA,	  6,  6
 	; nite
 	db 30, ODDISH,	  	  5,  5
 	db 30, VENONAT,	  	  5,  5
@@ -597,7 +597,7 @@ JohtoGrassWildMons:
 	db 10, PSYDUCK,	  	  7,  7
 	db  5, HOOTHOOT,	  7,  7
 	db  4, PARAS,	  	  6,  6
-	db  1, PARAS,	  	  6,  6
+	db  1, CHIKORITA,	  6,  6
 	end_grass_wildmons
 
 	def_grass_wildmons MOUNT_MORTAR_1F_OUTSIDE
@@ -1225,7 +1225,7 @@ JohtoGrassWildMons:
 	db 10, URSARING,	  25,  25
 	db  5, TEDDIURSA,	  20,  20
 	db  4, GOLBAT,	  	  23,  23
-	db  1, GOLBAT,	  	  23,  23
+	db  1, CYNDAQUIL,	  23,  23
 	; day
 	db 30, GEODUDE,	  	  23,  23
 	db 30, ZUBAT,	  	  23,  23
@@ -1233,7 +1233,7 @@ JohtoGrassWildMons:
 	db 10, URSARING,	  25,  25
 	db  5, URSARING,	  20,  20
 	db  4, GOLBAT,	  	  23,  23
-	db  1, GOLBAT,	  	  23,  23
+	db  1, CYNDAQUIL,	  23,  23
 	; nite
 	db 30, GEODUDE,	  	  23,  23
 	db 30, ZUBAT,	  	  23,  23
@@ -1241,7 +1241,7 @@ JohtoGrassWildMons:
 	db 10, WOBBUFFET,	  20,  20
 	db  5, WOBBUFFET,	  25,  25
 	db  4, GOLBAT,	  	  23,  23
-	db  1, GOLBAT,	  	  23,  23
+	db  1, CYNDAQUIL,	  23,  23
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_29
@@ -1417,7 +1417,7 @@ JohtoGrassWildMons:
 	; morn
 	db 30, SNUBBULL,	  12,  12
 	db 30, PIDGEY,	  	  14,  14
-	db 20, GROWLITHE,	  13,  13
+	db 20, HOUNDOUR,	  13,  13
 	db 10, ABRA,	  	  10,  10
 	db  5, JIGGLYPUFF,	  12,  12
 	db  4, DITTO,	  	  10,  10
@@ -1425,7 +1425,7 @@ JohtoGrassWildMons:
 	; day
 	db 30, SNUBBULL,	  12,  12
 	db 30, PIDGEY,	  	  14,  14
-	db 20, GROWLITHE,	  13,  13
+	db 20, HOUNDOUR,	  13,  13
 	db 10, ABRA,	  	  10,  10
 	db  5, JIGGLYPUFF,	  12,  12
 	db  4, DITTO,	  	  10,  10
@@ -1433,7 +1433,7 @@ JohtoGrassWildMons:
 	; nite
 	db 30, DROWZEE,	  	  12,  12
 	db 30, HOOTHOOT,	  14,  14
-	db 20, PSYDUCK,	  	  13,  13
+	db 20, HOUNDOUR,	  13,  13
 	db 10, ABRA,	  	  10,  10
 	db  5, JIGGLYPUFF,	  12,  12
 	db  4, DITTO,	  	  10,  10
@@ -1462,8 +1462,8 @@ JohtoGrassWildMons:
 	db 30, SPINARAK,	  4,  4
 	db 30, HOOTHOOT,	  4,  4
 	db 20, BELLSPROUT,	  5,  5
-	db 10, HOOTHOOT,	  5,  5
-	db  5, HOOTHOOT,	  5,  5
+	db 10, MURKROW,	  	  5,  5
+	db  5, MURKROW,	  	  5,  5
 	db  4, GASTLY,	  	  6,  6
 	db  1, GASTLY,	  	  6,  6
 	end_grass_wildmons
