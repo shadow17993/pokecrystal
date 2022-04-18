@@ -99,7 +99,7 @@ ItemNames::
 	li "WHT APRICORN"
 	li "BLACKBELT"
 	li "BLK APRICORN"
-	li "TERU-SAMA"
+	li "LINK CABLE"
 	li "PNK APRICORN"
 	li "BLACKGLASSES"
 	li "SLOWPOKETAIL"
