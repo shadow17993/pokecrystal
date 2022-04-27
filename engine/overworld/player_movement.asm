@@ -55,6 +55,8 @@ DoPlayerMovement::
 	ret c
 	call .CheckWarp
 	ret c
+	call .TrySurf
+	ret c
 	jr .NotMoving
 
 .Surf:
@@ -334,6 +336,10 @@ DoPlayerMovement::
 	ld a, [wWalkingIntoLand]
 	and a
 	jr nz, .ExitWater
+	
+	ld a, [wWalkingIntoLand]
+	and a
+	call .EnterWater
 
 	ld a, STEP_WALK
 	call .DoStep
@@ -346,6 +352,15 @@ DoPlayerMovement::
 	ld a, STEP_WALK
 	call .DoStep
 	ld a, PLAYERMOVEMENT_EXIT_WATER
+	scf
+	ret
+
+.EnterWater:
+	call .GetInToWater
+	call PlayMapMusic
+	ld a, STEP_WALK
+	call .DoStep
+	ld a, PLAYERMOVEMENT_NORMAL
 	scf
 	ret
 
@@ -794,6 +809,14 @@ ENDM
 .GetOutOfWater:
 	push bc
 	ld a, PLAYER_NORMAL
+	ld [wPlayerState], a
+	call UpdatePlayerSprite ; UpdateSprites
+	pop bc
+	ret
+
+.GetInToWater:
+	push bc
+	ld a, PLAYER_SURF
 	ld [wPlayerState], a
 	call UpdatePlayerSprite ; UpdateSprites
 	pop bc
