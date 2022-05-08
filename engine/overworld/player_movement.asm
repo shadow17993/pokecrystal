@@ -729,9 +729,9 @@ ENDM
 .CheckSurfPerms:
 ; Return 0 if moving in water, or 1 if moving onto land.
 ; Otherwise, return carry.
-	ld de, ENGINE_FOGBADGE
-	call CheckEngineFlag
-	jr .NotSurfable
+	; ld de, ENGINE_FOGBADGE
+	; call CheckEngineFlag
+	; jr .NotSurfable
 
 	ld a, [wTilePermissions]
 	ld d, a

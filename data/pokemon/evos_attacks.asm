@@ -2189,6 +2189,7 @@ TotodileEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SCRATCH
 	db 1, LEER
+	db 1, SURF
 	db 7, WATER_GUN
 	db 13, SCARY_FACE
 	db 20, BITE
